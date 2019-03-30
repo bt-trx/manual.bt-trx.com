@@ -1,0 +1,7 @@
+site_name: bt-trx Manual
+theme: readthedocs
+repo_url: https://github.com/bt-trx/manual.bt-trx.com
+extra:
+  version: 0.01
+nav:
+  - Home: index.md
