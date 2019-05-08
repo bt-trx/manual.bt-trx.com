@@ -1,7 +1,15 @@
 site_name: bt-trx Manual
-theme: readthedocs
+theme:
+  name: rtd-dropdown
+  collapse_by_default: true
 repo_url: https://github.com/bt-trx/manual.bt-trx.com
+extra_css:
+    - css/extra.css
 extra:
   version: 0.01
 nav:
   - Home: index.md
+  - Kompatibilitätsliste: Kompatibilitätsliste.md
+  - Zusammenbau:
+    - Adapterkabel: Zusammenbau/Adapterkabel.md
+  - Bedienung: Bedienung.md
