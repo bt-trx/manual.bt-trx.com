@@ -8,7 +8,7 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
-- V_IN (Pin 7 (+)/8 (-) der RJ45 Buchse), 6...20 V DC, ca. 40 mA bei 12 V, oder
+- Adapterkabel: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
 - Mikro-USB Buchse
 
 **In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
@@ -43,6 +43,9 @@ z.B. Anytone, Baofeng, Kenwood, Wouxun
 
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
 über USB erfolgen.
+
+![Beispiel Adapterkabel mit Klinkenstecker](https://picsum.photos/400/300)  
+Beispiel für ein Adapterkabel mit Klinkenstecker
 
 ### Kenwood (nicht getestet)
 
