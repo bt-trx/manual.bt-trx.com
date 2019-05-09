@@ -3,7 +3,12 @@
 ## 1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste
 
 Der Anschluss ans Funkgerät erfolgt in der Regel über ein
-[Adapterkabel](../adapterkabel).
+[Adapterkabel](../Zusammenbau/Adapterkabel).
+
+bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+
+- Adapterkabel: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
+- Mikro-USB Buchse
 
 Nach dem Herstellen der Spannungsversorgung leuchtet die **rote LED** (zeigt 
 3.3 V Betriebsspannung des Controllers und des BT-Moduls an), bt-trx startet automatisch.
