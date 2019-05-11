@@ -11,5 +11,6 @@ nav:
   - Home: index.md
   - Kompatibilitätsliste: Kompatibilitätsliste.md
   - Zusammenbau:
-    - Adapterkabel: Zusammenbau/Adapterkabel.md
+    - Anschlusskabel: Zusammenbau/Anschlusskabel.md
+    - PTT-Taste: Zusammenbau/PTT-Taste.md
   - Bedienung: Bedienung.md

@@ -1,4 +1,4 @@
-# Adapterkabel
+# Anschlusskabel
 
 Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.
@@ -8,12 +8,12 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
-- Adapterkabel: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
+- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
 - Mikro-USB Buchse
 
 **In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
 
-## Belegung bt-trx
+## Belegung RJ45 Buchse (J5)
 
 | Pin | Kürzel | Farbe       | Signal bt-trx |
 |:---:|:------:|-------------|---------------|
@@ -26,13 +26,16 @@ bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 | 7   | br     | braun/weiß  | V_IN (6...20 V DC) |
 | 8   | BR     | braun       | GND           |
 
-## Belegung Funkgeräte
+## Belegung Funkgerät
+
+Hier ist eine Sammlung der Steckerbelegungen diverser Funkgeräte und der
+entsprechenden Signale des bt-trx.
 
 ### Handfunkgeräte (2.5mm und 3.5 mm Klinke)
 
 z.B. Anytone, Baofeng, Kenwood, Wouxun
 
-| Kontakt       | Signal   | Farbe | Signal bt-trx |
+| Kontakt       | Signal   | Farbe Stecker J5 | Signal bt-trx |
 |---------------|----------|:-----:|---------------|
 | 3.5 mm Tip    | +5V      | --    | --            |
 | 3.5 mm Ring   | MIC+     | G     | AUDIO_OUT     |
@@ -49,7 +52,7 @@ Beispiel für ein Adapterkabel mit Klinkenstecker
 
 ### Kenwood (nicht getestet)
 
-| Pin | Farbe | TM-D700             | TM-D710             | Farbe | Signal bt-trx |
+| Pin | Farbe | TM-D700             | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
 |:---:|:-----:|---------------------|---------------------|:-----:|---------------|
 | 1   | o     | DWN                 | Keypard Serial      | --    | --            |
 | 2   | O     | --                  | --                  | --    | --            |
@@ -64,7 +67,7 @@ TODO: Testen ob der Strom bei 8 V reicht, oder extern zugeführt werden muss.
 
 ### ICOM (nicht getestet)
 
-| Pin | Farbe | IC-7000          | Farbe | Signal bt-trx |
+| Pin | Farbe | IC-7000          | Farbe Stecker J5 | Signal bt-trx |
 |:---:|:-----:|------------------|:-----:|---------------|
 | 1   | o     | +8 V, 10 mA max. | --    | --            |
 | 2   | O     | UP/DWN           | --    | --            |

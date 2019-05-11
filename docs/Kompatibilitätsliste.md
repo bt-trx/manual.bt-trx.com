@@ -10,6 +10,7 @@ Wir freuen uns über Erfahrungsberichte von hier gelisteten oder neuen Modellen!
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
 | Ford Ranger xy           | nein          | Pairing schlägt fehl |
+| Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig |
 | SEAT xy                  | ja            | -- | 
 | Skoda Columbus (Octavia BJ 2011) | nein  | Pairing schlägt fehl (16 stellige PIN) |
 
