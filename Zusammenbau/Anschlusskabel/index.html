@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Adapterkabel - bt-trx Manual</title>
+  <title>Anschlusskabel - bt-trx Manual</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Adapterkabel";
-    var mkdocs_page_input_path = "Zusammenbau/Adapterkabel.md";
+    var mkdocs_page_name = "Anschlusskabel";
+    var mkdocs_page_input_path = "Zusammenbau/Anschlusskabel.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -82,7 +82,7 @@
     
     <li class="navtree toctree-l2 page current">
       <a class="current" href="./">
-        Adapterkabel
+        Anschlusskabel
           <span class="toctree-expand"></span>
       </a>
     </li>
@@ -96,15 +96,15 @@
     
       
         <li class="toctree-l3">
-          <a class="toctree-l4" href="#belegung-bt-trx">Belegung bt-trx</a>
+          <a class="toctree-l4" href="#belegung-rj45-buchse-j5">Belegung RJ45 Buchse (J5)</a>
         </li>
     
       
           
 
   <li class="toctree-l3">
-    <a href="#belegung-funkgerate">
-      Belegung Funkgeräte
+    <a href="#belegung-funkgerat">
+      Belegung Funkgerät
       <span class="toctree-expand"></span>
     </a>
   </li>
@@ -139,6 +139,13 @@
 
 
   
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../PTT-Taste/">PTT-Taste</a>
+  </li>
         
       </ul>
     </li>
@@ -176,10 +183,10 @@
         
       
     
-    <li>Adapterkabel</li>
+    <li>Anschlusskabel</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/Zusammenbau/Adapterkabel.md"
+        <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/Zusammenbau/Anschlusskabel.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -189,18 +196,18 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="adapterkabel">Adapterkabel</h1>
+                <h1 id="anschlusskabel">Anschlusskabel</h1>
 <p>Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.</p>
 <p>Da die Funkgeräte an der Mikrofonbuchse nicht immer eine passende Versorgungsspannung bzw. -leistung liefern,
 kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarettenanzünder).</p>
 <p>bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:</p>
 <ul>
-<li>Adapterkabel: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder</li>
+<li>Buchse J5: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder</li>
 <li>Mikro-USB Buchse</li>
 </ul>
 <p><strong>In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!</strong></p>
-<h2 id="belegung-bt-trx">Belegung bt-trx</h2>
+<h2 id="belegung-rj45-buchse-j5">Belegung RJ45 Buchse (J5)</h2>
 <table>
 <thead>
 <tr>
@@ -261,7 +268,9 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 </tr>
 </tbody>
 </table>
-<h2 id="belegung-funkgerate">Belegung Funkgeräte</h2>
+<h2 id="belegung-funkgerat">Belegung Funkgerät</h2>
+<p>Hier ist eine Sammlung der Steckerbelegungen diverser Funkgeräte und der
+entsprechenden Signale des bt-trx.</p>
 <h3 id="handfunkgerate-25mm-und-35-mm-klinke">Handfunkgeräte (2.5mm und 3.5 mm Klinke)</h3>
 <p>z.B. Anytone, Baofeng, Kenwood, Wouxun</p>
 <table>
@@ -269,7 +278,7 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 <tr>
 <th>Kontakt</th>
 <th>Signal</th>
-<th align="center">Farbe</th>
+<th align="center">Farbe Stecker J5</th>
 <th>Signal bt-trx</th>
 </tr>
 </thead>
@@ -324,7 +333,7 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <th align="center">Farbe</th>
 <th>TM-D700</th>
 <th>TM-D710</th>
-<th align="center">Farbe</th>
+<th align="center">Farbe Stecker J5</th>
 <th>Signal bt-trx</th>
 </tr>
 </thead>
@@ -403,7 +412,7 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <th align="center">Pin</th>
 <th align="center">Farbe</th>
 <th>IC-7000</th>
-<th align="center">Farbe</th>
+<th align="center">Farbe Stecker J5</th>
 <th>Signal bt-trx</th>
 </tr>
 </thead>
@@ -473,7 +482,7 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../Bedienung/" class="btn btn-neutral float-right" title="Bedienung">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../PTT-Taste/" class="btn btn-neutral float-right" title="PTT-Taste">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../Kompatibilitätsliste/" class="btn btn-neutral" title="Kompatibilitätsliste"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -507,7 +516,7 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
         <span><a href="../../Kompatibilitätsliste/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../Bedienung/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../PTT-Taste/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
