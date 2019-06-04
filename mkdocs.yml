@@ -7,7 +7,7 @@ repo_url: https://github.com/bt-trx/manual.bt-trx.com
 extra_css:
     - css/extra.css
 extra:
-  version: 0.01
+  version: 0.1.0
 nav:
   - Home: index.md
   - Kompatibilitätsliste: Kompatibilitätsliste.md
