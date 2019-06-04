@@ -9,7 +9,9 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
 - Buchse J5: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
-- Mikro-USB Buchse
+- Micro-USB Buchse (Teensy)
+
+![sdfs](bt-trx_connectors.png)
 
 **In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
 
@@ -47,23 +49,47 @@ z.B. Anytone, Baofeng, Kenwood, Wouxun
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
 über USB erfolgen.
 
-![Beispiel Adapterkabel mit Klinkenstecker](https://picsum.photos/400/300)  
-Beispiel für ein Adapterkabel mit Klinkenstecker
+**Beispiel für ein Adapterkabel mit Klinkenstecker**  
+![Beispiel Adapterkabel mit Klinkenstecker](Adapter_Klinke_640.jpg)
 
-### Kenwood (nicht getestet)
+### Kenwood
 
-| Pin | Farbe | TM-D700             | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
-|:---:|:-----:|---------------------|---------------------|:-----:|---------------|
-| 1   | o     | DWN                 | Keypard Serial      | --    | --            |
-| 2   | O     | --                  | --                  | --    | --            |
-| 3   | g     | MIC                 | MIC (600 Ohm)       | G     | AUDIO_OUT     |
-| 4   | B     | GND (MIC)           | GND (MIC)           | BR    | --            |
-| 5   | b     | STBY (PTT)          | PTT                 | b     | PTT           |
-| 6   | G     | GND                 | GND                 | BR    | GND           |
-| 7   | br    | 8 V, max. 200 mA    | 8 V, max. 100 mA    | br    | V_IN          |
-| 8   | BR    | UP                  | --                  | --    | --            |
+#### TM-D700
 
-TODO: Testen ob der Strom bei 8 V reicht, oder extern zugeführt werden muss.
+| Pin | Farbe | TM-D700             | Farbe Stecker J5 | Signal bt-trx |
+|:---:|:-----:|---------------------|:-----:|---------------|
+| 1   | o     | DWN                 | --    | --            |
+| 2   | O     | --                  | --    | --            |
+| 3   | g     | MIC                 | G     | AUDIO_OUT     |
+| 4   | B     | GND (MIC)           | BR    | --            |
+| 5   | b     | STBY (PTT)          | b     | PTT           |
+| 6   | G     | GND                 | BR    | GND           |
+| 7   | br    | 8 V, max. 200 mA    | br    | V_IN          |
+| 8   | BR    | UP                  | --    | --            |
+
+Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
+
+**Beispiel für ein Adapterkabel für Kenwood TM-D700**  
+![Beispiel Adapterkabel mit Klinkenstecker](Adapter_TMD_640.jpg)
+
+### TM-D710 (nicht getestet)
+
+| Pin | Farbe | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
+|:---:|:-----:|---------------------|:-----:|---------------|
+| 1   | o     | Keypard Serial      | --    | --            |
+| 2   | O     | --                  | --    | --            |
+| 3   | g     | MIC (600 Ohm)       | G     | AUDIO_OUT     |
+| 4   | B     | GND (MIC)           | BR    | --            |
+| 5   | b     | PTT                 | b     | PTT           |
+| 6   | G     | GND                 | BR    | GND           |
+| 7   | br    | 8 V, max. 100 mA    | --    | --            |
+| 8   | BR    | --                  | --    | --            |
+
+Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
+über USB erfolgen.
+
+**TODO: Testen ob 8 V, 100 mA ausreichen um bt-trx direkt über das Funkgerät zu
+versorgen**
 
 ### ICOM (nicht getestet)
 
@@ -77,3 +103,6 @@ TODO: Testen ob der Strom bei 8 V reicht, oder extern zugeführt werden muss.
 | 6   | G     | MIC              | G     | AUDIO_OUT     |
 | 7   | br    | GND              | BR    | GND           |
 | 8   | BR    | SQL              | --    | --            |
+
+Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
+über USB erfolgen.
