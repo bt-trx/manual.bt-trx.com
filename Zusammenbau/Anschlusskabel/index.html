@@ -120,8 +120,33 @@
         </li>
     
       
+          
+
+  <li class="toctree-l4">
+    <a href="#kenwood">
+      Kenwood
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#tm-d700">TM-D700</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#kenwood-nicht-getestet">Kenwood (nicht getestet)</a>
+          <a class="toctree-l5" href="#tm-d710-nicht-getestet">TM-D710 (nicht getestet)</a>
         </li>
     
       
@@ -204,8 +229,9 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 <p>bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:</p>
 <ul>
 <li>Buchse J5: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder</li>
-<li>Mikro-USB Buchse</li>
+<li>Micro-USB Buchse (Teensy)</li>
 </ul>
+<p><img alt="sdfs" src="bt-trx_connectors.png" /></p>
 <p><strong>In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!</strong></p>
 <h2 id="belegung-rj45-buchse-j5">Belegung RJ45 Buchse (J5)</h2>
 <table>
@@ -323,16 +349,16 @@ entsprechenden Signale des bt-trx.</p>
 </table>
 <p>Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
 über USB erfolgen.</p>
-<p><img alt="Beispiel Adapterkabel mit Klinkenstecker" src="https://picsum.photos/400/300" /><br />
-Beispiel für ein Adapterkabel mit Klinkenstecker</p>
-<h3 id="kenwood-nicht-getestet">Kenwood (nicht getestet)</h3>
+<p><strong>Beispiel für ein Adapterkabel mit Klinkenstecker</strong><br />
+<img alt="Beispiel Adapterkabel mit Klinkenstecker" src="Adapter_Klinke_640.jpg" /></p>
+<h3 id="kenwood">Kenwood</h3>
+<h4 id="tm-d700">TM-D700</h4>
 <table>
 <thead>
 <tr>
 <th align="center">Pin</th>
 <th align="center">Farbe</th>
 <th>TM-D700</th>
-<th>TM-D710</th>
 <th align="center">Farbe Stecker J5</th>
 <th>Signal bt-trx</th>
 </tr>
@@ -342,14 +368,12 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <td align="center">1</td>
 <td align="center">o</td>
 <td>DWN</td>
-<td>Keypard Serial</td>
 <td align="center">--</td>
 <td>--</td>
 </tr>
 <tr>
 <td align="center">2</td>
 <td align="center">O</td>
-<td>--</td>
 <td>--</td>
 <td align="center">--</td>
 <td>--</td>
@@ -358,14 +382,12 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <td align="center">3</td>
 <td align="center">g</td>
 <td>MIC</td>
-<td>MIC (600 Ohm)</td>
 <td align="center">G</td>
 <td>AUDIO_OUT</td>
 </tr>
 <tr>
 <td align="center">4</td>
 <td align="center">B</td>
-<td>GND (MIC)</td>
 <td>GND (MIC)</td>
 <td align="center">BR</td>
 <td>--</td>
@@ -374,14 +396,12 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <td align="center">5</td>
 <td align="center">b</td>
 <td>STBY (PTT)</td>
-<td>PTT</td>
 <td align="center">b</td>
 <td>PTT</td>
 </tr>
 <tr>
 <td align="center">6</td>
 <td align="center">G</td>
-<td>GND</td>
 <td>GND</td>
 <td align="center">BR</td>
 <td>GND</td>
@@ -390,7 +410,6 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <td align="center">7</td>
 <td align="center">br</td>
 <td>8 V, max. 200 mA</td>
-<td>8 V, max. 100 mA</td>
 <td align="center">br</td>
 <td>V_IN</td>
 </tr>
@@ -398,13 +417,88 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 <td align="center">8</td>
 <td align="center">BR</td>
 <td>UP</td>
+<td align="center">--</td>
+<td>--</td>
+</tr>
+</tbody>
+</table>
+<p>Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.</p>
+<p><strong>Beispiel für ein Adapterkabel für Kenwood TM-D700</strong><br />
+<img alt="Beispiel Adapterkabel mit Klinkenstecker" src="Adapter_TMD_640.jpg" /></p>
+<h3 id="tm-d710-nicht-getestet">TM-D710 (nicht getestet)</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Pin</th>
+<th align="center">Farbe</th>
+<th>TM-D710</th>
+<th align="center">Farbe Stecker J5</th>
+<th>Signal bt-trx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">o</td>
+<td>Keypard Serial</td>
+<td align="center">--</td>
+<td>--</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">O</td>
+<td>--</td>
+<td align="center">--</td>
+<td>--</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">g</td>
+<td>MIC (600 Ohm)</td>
+<td align="center">G</td>
+<td>AUDIO_OUT</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">B</td>
+<td>GND (MIC)</td>
+<td align="center">BR</td>
+<td>--</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">b</td>
+<td>PTT</td>
+<td align="center">b</td>
+<td>PTT</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">G</td>
+<td>GND</td>
+<td align="center">BR</td>
+<td>GND</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">br</td>
+<td>8 V, max. 100 mA</td>
+<td align="center">--</td>
+<td>--</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">BR</td>
 <td>--</td>
 <td align="center">--</td>
 <td>--</td>
 </tr>
 </tbody>
 </table>
-<p>TODO: Testen ob der Strom bei 8 V reicht, oder extern zugeführt werden muss.</p>
+<p>Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
+über USB erfolgen.</p>
+<p><strong>TODO: Testen ob 8 V, 100 mA ausreichen um bt-trx direkt über das Funkgerät zu
+versorgen</strong></p>
 <h3 id="icom-nicht-getestet">ICOM (nicht getestet)</h3>
 <table>
 <thead>
@@ -475,6 +569,8 @@ Beispiel für ein Adapterkabel mit Klinkenstecker</p>
 </tr>
 </tbody>
 </table>
+<p>Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
+über USB erfolgen.</p>
               
             </div>
           </div>
