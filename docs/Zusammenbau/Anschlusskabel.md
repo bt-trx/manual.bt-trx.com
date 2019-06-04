@@ -72,7 +72,7 @@ Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
 **Beispiel für ein Adapterkabel für Kenwood TM-D700**  
 ![Beispiel Adapterkabel mit Klinkenstecker](Adapter_TMD_640.jpg)
 
-### TM-D710 (nicht getestet)
+#### TM-D710 (nicht getestet)
 
 | Pin | Farbe | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
 |:---:|:-----:|---------------------|:-----:|---------------|
