@@ -1,4 +1,4 @@
-site_name: bt-trx Manual
+site_name: manual.bt-trx.com
 theme:
   name: rtd-dropdown
   custom_dir: custom_theme/
@@ -9,7 +9,7 @@ extra_css:
 extra:
   version: 0.1.0
 nav:
-  - Home: index.md
+  - Lizenz: index.md
   - Kompatibilitätsliste: Kompatibilitätsliste.md
   - Zusammenbau:
     - Anschlusskabel: Zusammenbau/Anschlusskabel.md
