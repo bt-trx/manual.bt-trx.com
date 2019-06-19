@@ -12,8 +12,9 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 | Ford Ranger xy           | nein          | Pairing schlägt fehl |
 | Jeep Wrangler            | ?             | Work in Progress |
 | Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig |
-| SEAT Ateca               | ?            | Work in Progress |
+| SEAT Ateca               | ?             | Work in Progress |
 | Skoda Columbus (Octavia BJ 2011) | nein  | Pairing schlägt fehl (16 stellige PIN) |
+| Tesla Model S            | ja            |  |
 
 ### Zubehörradios
 
