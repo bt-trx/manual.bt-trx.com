@@ -9,10 +9,10 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
-| Ford Ranger xy           | nein          | Pairing schlägt fehl |
-| Jeep Wrangler            | ?             | Work in Progress |
-| Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig |
-| SEAT Ateca               | ?             | Work in Progress |
+| Ford Ranger              |               | Work in Progress |
+| Jeep Wrangler            |               | Work in Progress |
+| Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig (0000) |
+| SEAT Ateca               |               | Work in Progress |
 | Skoda Columbus (Octavia BJ 2011) | nein  | Pairing schlägt fehl (16 stellige PIN) |
 | Tesla Model S            | ja            |  |
 
@@ -21,6 +21,7 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
 | Kenwood DMX7017DABS      | ja            | -- |
+| Kenwood KDC-X7200DAB     | ja            | -- |
 | Pioneer AVH-X3500DAB     | ja            | -- |
 | Pioneer AVH-Z5100DAB     | ja            | -- |
 
@@ -29,5 +30,6 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
 | Kenwood TM-D700          | ja            | -- |
+| Kenwood TM-D710          | ja            | -- |
 | Tytera MD-380 / MD-390   | ja            | -- |
 | Wouxun KG-UV6D           | ja            | -- |
