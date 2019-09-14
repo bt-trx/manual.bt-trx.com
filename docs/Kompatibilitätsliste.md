@@ -9,14 +9,15 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
+| Citroen C5 Bj. 2019)     | ja            |           |
 | Fiat Fiorino             | ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (z.B. `SET BT AUTH * 1234`) |
-| Ford Ranger              | ja            |  |
+| Ford Ranger              | ja            |           |
 | Jeep Wrangler            |               | Work in Progress |
 | Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig (bei bt-trx voreingestellt: 0000) |
 | SEAT Ateca               |               | Work in Progress |
-| Tesla Model S            | ja            |  |
-| VW Caddy (Radio RCD330+) | ja            |  |
-| VW Passat (Bj. 2017)     | ja            |  |
+| Tesla Model S            | ja            |           |
+| VW Caddy (Radio RCD330+) | ja            |           |
+| VW Passat (Bj. 2017)     | ja            |           |
 
 ### Zubehörradios
 
