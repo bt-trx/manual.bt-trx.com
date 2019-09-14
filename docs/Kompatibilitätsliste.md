@@ -1,6 +1,6 @@
 # Kompatibilitätsliste
 
-Diese Geräte wurden bisher mit **bt-trx Firmware Version 0.1.1** getestet.  
+Diese Geräte wurden bisher mit **bt-trx Firmware Version 0.1.2** getestet.  
 Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 
 ## Autoradios
@@ -9,13 +9,14 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
-| Fiat Fiorino             | ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (`SET BT AUTH * 1234`) |
+| Fiat Fiorino             | ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (z.B. `SET BT AUTH * 1234`) |
 | Ford Ranger              | ja            |  |
 | Jeep Wrangler            |               | Work in Progress |
 | Mini Cooper (Bj. 2009)   | ja            | Pineingabe am Fahrzeug notwendig (bei bt-trx voreingestellt: 0000) |
 | SEAT Ateca               |               | Work in Progress |
 | Tesla Model S            | ja            |  |
 | VW Caddy (Radio RCD330+) | ja            |  |
+| VW Passat (Bj. 2017)     | ja            |  |
 
 ### Zubehörradios
 
