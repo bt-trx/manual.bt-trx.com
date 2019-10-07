@@ -9,9 +9,14 @@ extra_css:
 extra:
   version: 0.1.0
 nav:
-  - Lizenz: index.md
-  - Kompatibilitätsliste: Kompatibilitätsliste.md
+  - Startseite: index.md
+  - Allgemein:
+    - Kompatibilitätsliste: 10_Allgemein/Kompatibilitätsliste.md
   - Zusammenbau:
-    - Anschlusskabel: Zusammenbau/Anschlusskabel.md
-    - PTT-Taste: Zusammenbau/PTT-Taste.md
-  - Bedienung: Bedienung.md
+    - Lötanleitung: 20_Zusammenbau/Lötanleitung.md
+    - Anschlusskabel: 20_Zusammenbau/Anschlusskabel.md
+    - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
+  - Bedienung:
+    - Anschluss: 30_Bedienung/Anschluss.md
+    - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
+    - Firmware-Update: 30_Bedienung/Firmware-Update.md

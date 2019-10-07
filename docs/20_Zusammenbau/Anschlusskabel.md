@@ -8,8 +8,8 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
-- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 6...20 V DC, ca. 40 mA bei 12 V, oder
-- Micro-USB Buchse (Teensy)
+- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, ca. 90 mA bei 12 V, oder
+- Micro-USB Buchse (ESP32 Modul)
 
 ![sdfs](bt-trx_connectors.png)
 
@@ -25,7 +25,7 @@ bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 | 4   | B      | blau        | AUDIO_IN_A    |
 | 5   | b      | blau/weiß   | PTT           |
 | 6   | G      | grün        | AUDIO_OUT     |
-| 7   | br     | braun/weiß  | V_IN (6...20 V DC) |
+| 7   | br     | braun/weiß  | V_IN (5...15 V DC) |
 | 8   | BR     | braun       | GND           |
 
 ## Belegung Funkgerät
@@ -72,7 +72,7 @@ Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
 **Beispiel für ein Adapterkabel für Kenwood TM-D700**  
 ![Beispiel Adapterkabel mit Klinkenstecker](Adapter_TMD_640.jpg)
 
-#### TM-D710 (nicht getestet)
+#### TM-D710
 
 | Pin | Farbe | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
 |:---:|:-----:|---------------------|:-----:|---------------|
@@ -85,11 +85,8 @@ Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
 | 7   | br    | 8 V, max. 100 mA    | --    | --            |
 | 8   | BR    | --                  | --    | --            |
 
-Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
-über USB erfolgen.
-
-**TODO: Testen ob 8 V, 100 mA ausreichen um bt-trx direkt über das Funkgerät zu
-versorgen**
+Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
+oder über USB erfolgen.
 
 ### ICOM (nicht getestet)
 
@@ -104,5 +101,5 @@ versorgen**
 | 7   | br    | GND              | BR    | GND           |
 | 8   | BR    | SQL              | --    | --            |
 
-Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
-über USB erfolgen.
+Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
+oder über USB erfolgen.
