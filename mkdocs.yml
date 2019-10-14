@@ -1,13 +1,33 @@
+# Project Information
 site_name: manual.bt-trx.com
-theme:
-  name: rtd-dropdown
-  custom_dir: custom_theme/
-  collapse_by_default: true
+site_url: 'https://manual.bt-trx.com'
+
+# Repository
+repo_name: 'bt-trx/manual.bt-trx.com'
 repo_url: https://github.com/bt-trx/manual.bt-trx.com
-extra_css:
-    - css/extra.css
+
+# Configuration
+theme:
+  name: material
+  palette:
+    primary: 'white'
+    accent: 'light blue'
+  logo: 'https://bt-trx.com/assets/img/bt-trx_quadrat.svg'
+  favicon: 'https://bt-trx.com/assets/favicon.ico'
+  font: false
+
+# Customization
 extra:
-  version: 0.1.0
+  version: 0.1.3
+  social:
+    - type: 'github'
+      link: 'https://github.com/bt-trx'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
 nav:
   - Startseite: index.md
   - Allgemein:
@@ -20,3 +40,5 @@ nav:
     - Anschluss: 30_Bedienung/Anschluss.md
     - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
+  - Entwicklung:
+    - Software: 40_Entwicklung/Software.md
