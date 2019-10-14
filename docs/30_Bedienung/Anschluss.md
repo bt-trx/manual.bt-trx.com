@@ -1,6 +1,6 @@
 # Bedienung
 
-(Beschreibung für dev-board v4.1 und Firmware Version 0.1.2)
+(Beschreibung für dev-board v4.1 und Firmware Version 0.1.3)
 
 ## 1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste
 
@@ -41,10 +41,11 @@ Sobald die Verbindung einmal erfolgeich hergestellt wurde, sollten sich die
 beiden Geräte beim nächsten Start des bt-trx, bzw. des Fahrzeugs automatisch
 miteinander verbinden.
 
-Die beiden Status-LEDs (blau und grün) liefern folgende Informationen:
+Die beiden Status-LEDs (grün und blau) liefern folgende Informationen:
 
-| LED blau | LED grün | Status                       |
-|:--------:|:--------:|------------------------------|
-| aus      | an       | BT-Verbindungssuche          |
-| an       | aus      | BT-Verbindung hergestellt    |
-| an       | blinkt   | Audio-Verbindung hergestellt |
+| Aktivität-LED (grün) | Bluetooth-LED (blau) | Status                       |
+|:--------------------:|:--------------------:|------------------------------|
+| blinkt               | blinkt               | [Firmware-Update Modus](../Firmware-Update)        |
+| aus                  | blinkt               | BT-Verbindungssuche          |
+| aus                  | an                   | BT-Verbindung hergestellt    |
+| blinkt               | an                   | Audio-Verbindung hergestellt |
