@@ -1,6 +1,6 @@
 # Stromverbrauch
 
-Messungen mit Firmware Version 0.2.0
+Stand: Firmware v0.2.0
 
 Aktuell sind noch keine stromsparenden Maßnahmen in der Firmware integriert.
 Die Leistungsaufnahme beträgt ca. 500 mW.

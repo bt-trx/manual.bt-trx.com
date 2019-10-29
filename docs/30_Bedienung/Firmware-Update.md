@@ -1,11 +1,15 @@
 # Firmware-Update
 
+Die aktuellste Firmwareversion kann man sich unter
+[https://github.com/bt-trx/firmware/releases](https://github.com/bt-trx/firmware/releases)
+("bt-trx_esp32_firmware_x.y.z.bin") herunterladen.
+
 Eine neue Firmware-Version kann mittels WLAN auf bt-trx aufgespielt werden.
 
 Dafür muss bt-trx in den Update-Modus versetzt werden. Hierzu hält man SW1
 während des Starts von bt-trx für 5 Sekunden lang gedrückt.
 Wenn der Update-Modus erfolgreich gestartet wurde, blinken die beiden
-Status-LEDs gleichzeitig im Sekundentakt.
+Status-LEDs kurz gleichzeitig.
 
 Nun kann man sich mit dem Computer oder dem Smartphone mit dem WLAN "bt-trx"
 verbinden (Password: "bt-trx73").
@@ -19,5 +23,3 @@ Auf der Website muss mittels "Choose File" die Firmwaredatei (*.bin) ausgewählt
 und mit dem "Update" Button auf das Gerät geschrieben werden.
 Nach erfolgreichem Upload und Einspielen des Updates startet sich bt-trx
 automatisch neu.
-
-Die aktuellste Firmwareversion kann man sich unter [https://github.com/bt-trx/firmware/releases](https://github.com/bt-trx/firmware/releases) herunterladen.

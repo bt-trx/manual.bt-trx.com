@@ -8,14 +8,16 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
-- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, ca. 90 mA bei 12 V, oder
-- Micro-USB Buchse (ESP32 Modul)
+- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder
+- Mikro-USB Buchse des ESP32
+
+Informationen zum Stromverbrauch gibt es [hier](../../10_Allgemein/Stromverbrauch).
 
 ![sdfs](bt-trx_connectors.png)
 
 **In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
 
-## Belegung RJ45 Buchse (J5)
+## Belegung RJ45 Buchse (J1)
 
 | Pin | Kürzel | Farbe       | Signal bt-trx |
 |:---:|:------:|-------------|---------------|

@@ -7,11 +7,6 @@
 Der Anschluss ans Funkgerät erfolgt in der Regel über ein
 [Adapterkabel](../Zusammenbau/Anschlusskabel).
 
-bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
-
-- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, ca. 90 mA bei 12 V, oder
-- Mikro-USB Buchse
-
 Eine [PTT-Taste](../Zusammenbau/PTT-Taste) kann direkt in das bt-trx Gehäuse
 integriert (Kontakte J2), oder an die Klinkenbuchse (J3) angeschlossen werden.
 
@@ -45,7 +40,6 @@ Die beiden Status-LEDs (grün und blau) liefern folgende Informationen:
 
 | Aktivität-LED (grün) | Bluetooth-LED (blau) | Status                       |
 |:--------------------:|:--------------------:|------------------------------|
-| blinkt               | blinkt               | [Firmware-Update Modus](../Firmware-Update)        |
 | aus                  | blinkt               | BT-Verbindungssuche          |
 | aus                  | an                   | BT-Verbindung hergestellt    |
 | blinkt               | an                   | Audio-Verbindung hergestellt |
