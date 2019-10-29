@@ -15,6 +15,7 @@ Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 | Jeep Wrangler            |         |              | Work in Progress |
 | Mercedes GLC             | 2017    |ja            |  |
 | Mini Cooper              | 2009    |ja            | Pineingabe am Fahrzeug notwendig (bei bt-trx voreingestellt: 0000) |
+| Nissan Qashqai           |         |ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (z.B. `SET BT AUTH * 1234`) |
 | SEAT Ateca               |         |               | Work in Progress |
 | Tesla Model S            |         |ja            |  |
 | VW Caddy                 | 2014    |ja            | Radio: RCD330+ |
