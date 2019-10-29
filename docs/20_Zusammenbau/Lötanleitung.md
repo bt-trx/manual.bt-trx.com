@@ -50,7 +50,7 @@ Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleist
 
 Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel mit Strom versorgt. 
 
-Nun sollten die bersteinfarbende sowie die blaue LED dauerleuchten.
+Nun sollten die bersteinfarbende LED (Spannungsversorgung) dauerleuchten.
 
 ## Montage des Gehäuses
 

@@ -10,6 +10,11 @@ Der Anschluss ans Funkgerät erfolgt in der Regel über ein
 Eine [PTT-Taste](../Zusammenbau/PTT-Taste) kann direkt in das bt-trx Gehäuse
 integriert (Kontakte J2), oder an die Klinkenbuchse (J3) angeschlossen werden.
 
+!!! note "Hinweis zum PTT-slect Jumper J5"
+    Bitte nicht vergessen, den Jumper zu setzen! Je nach Konfiguration auf:
+    * µC: Hier übernimmt der ESP32 die PTT Steuerung (Empfohlen)
+    * BTN: Hier wird das PTT Signal direkt vom Taster weitergeleitet (Kann in einigen Sonderfällen erforderlich sein)
+
 Nach dem Herstellen der Spannungsversorgung leuchtet die **rote LED**
 (zeigt 3.3 V Betriebsspannung des Controllers und des BT-Moduls an),
 bt-trx startet automatisch.
