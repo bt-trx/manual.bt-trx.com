@@ -257,6 +257,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../10_Allgemein/Stromverbrauch/" title="Stromverbrauch" class="md-nav__link">
+      Stromverbrauch
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -340,8 +352,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#schaltbild-ptt-taste" class="md-nav__link">
-    Schaltbild PTT-Taste
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-ptt" class="md-nav__link">
+    Soft-PTT
   </a>
   
 </li>
@@ -486,8 +505,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#schaltbild-ptt-taste" class="md-nav__link">
-    Schaltbild PTT-Taste
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-ptt" class="md-nav__link">
+    Soft-PTT
   </a>
   
 </li>
@@ -519,14 +545,41 @@
                 
                 
                 <h1 id="ptt-taste">PTT-Taste<a class="headerlink" href="#ptt-taste" title="Permanent link">&para;</a></h1>
-<p>Der PTT-Kontakt des Funkgeräts ist auf den Kontakt J2 auf der Platine und an
-die 3.5 mm Mono-Klinkenbuchse (J3) durchgeschleift.</p>
-<p>Soll die PTT-Taste direkt in das bt-trx Gehäuse integriert werden, so bietet sich J2 an.</p>
-<p>Wenn die PTT-Taste an einer anderen Stelle als das bt-trx Gehäuse montiert werden soll, so wird der Anschluss an die Klinkenbuchse empfohlen.
-Mit einem Taster und einem Klinkenstecker kann somit einfach eine für den
-jeweiligen Zweck passende PTT-Taste gebaut werden.</p>
-<h2 id="schaltbild-ptt-taste">Schaltbild PTT-Taste<a class="headerlink" href="#schaltbild-ptt-taste" title="Permanent link">&para;</a></h2>
+<h2 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h2>
+<p>Der PTT-Kontakt des Funkgeräts ist auf mehreren Wegen von bt-trx bedienbar.</p>
 <p><img alt="Schaltbild PTT-Taste" src="ptt_schematic.png" /></p>
+<p>Soll die PTT-Taste direkt in das bt-trx Gehäuse integriert werden,
+bietet sich J2 an.<br />
+Soll die PTT-Taste an einer anderen Stelle als das bt-trx Gehäuse montiert
+werden, wird der Anschluss an die Klinkenbuchse J3 empfohlen.<br />
+Mit einem Taster und einem Klinkenstecker kann somit einfach eine für den
+jeweiligen Zweck passende PTT-Taste gebaut werden (siehe Bild weiter unten).</p>
+<p>Der "Ring"-Kontakt der Klinkenbuchse bzw. der mittlere Kontakt von J2 ist mit
+einem GPIO (3.3 V, max. 20 mA) des ESP32 verbunden, der den PTT-Status anzeigt
+("UC_PTT_LED").<br />
+An diesen Kontakt kann eine LED (mit Vorwiderstand) angeschlossen werden, um
+den aktuellen PTT Status widerzuspiegeln.</p>
+<p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
+Er entscheidet,</p>
+<ul>
+<li>ob der PTT Taster direkt zum Transceiver
+durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder</li>
+<li>ob der ESP32
+das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden ).</li>
+</ul>
+<p>Letzteres ist notwendig, um die folgenden "Soft-PTT" Funktionen nutzen zu können.</p>
+<h2 id="soft-ptt">Soft-PTT<a class="headerlink" href="#soft-ptt" title="Permanent link">&para;</a></h2>
+<p>"Soft-PTT" ist kurz für "Software-PTT" und beschreibt Komfort-Funktionen, die
+mit einer direkten Verbindung der PTT-Taste an den Transceiver nicht möglich
+wären.<br />
+Daher wird für Soft-PTT der ESP32 zwischen Taster und Transceiver geschaltet,
+damit das PTT Signal per Software gesteuert werden kann.<br />
+Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper J5 auf der
+Stellung "uC" sein (Pins 2-3 verbunden).
+Aktuell sind folgende Funktionen in der Firmware integriert:</p>
+<ul>
+<li>PTT wird nach Loslassen des Tasters noch für 500 ms gehalten</li>
+</ul>
 <h2 id="beispiel-fur-eine-selbstgebaute-externe-ptt-taste">Beispiel für eine selbstgebaute externe PTT-Taste<a class="headerlink" href="#beispiel-fur-eine-selbstgebaute-externe-ptt-taste" title="Permanent link">&para;</a></h2>
 <p><img alt="Beispiel PTT-Taste" src="Taster_PTT_640.jpg" /></p>
                 
