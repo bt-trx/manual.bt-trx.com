@@ -2,9 +2,12 @@
 
 This manual is [mkdocs](https://www.mkdocs.org/) based.
 
-## Install mkdocs and rtd-dropdown theme
+## Install mkdocs, mtdocs material and rtd-dropdown theme
 
 `python -m pip install mkdocs`
+
+`python -m pip install mkdocs-material`
+
 `python -m pip install mkdocs-rtd-dropdown`
 
 **Important: Each file name needs to be the same as the first heading in each file.**
