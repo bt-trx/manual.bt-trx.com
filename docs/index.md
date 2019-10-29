@@ -3,7 +3,7 @@
 
 <h3>Aktuelle Firmware-Version: 0.2.0</h3>
 
-![bt-trx Logo](https://bt-trx.com/assets/img/bt-trx_quadrat.svg)
+![bt-trx Logo](assets/bt-trx_quadrat.png)
 
 Diese Dokumentation ist unter der [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) lizensiert.
 
