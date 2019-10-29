@@ -309,9 +309,59 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Lötanleitung
+      </label>
+    
     <a href="./" title="Lötanleitung" class="md-nav__link md-nav__link--active">
       Lötanleitung
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inhalt-des-kits" class="md-nav__link">
+    Inhalt des Kits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotvorgang" class="md-nav__link">
+    Lötvorgang
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inbetriebnahme" class="md-nav__link">
+    Inbetriebnahme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#montage-des-gehauses" class="md-nav__link">
+    Montage des Gehäuses
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -458,6 +508,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inhalt-des-kits" class="md-nav__link">
+    Inhalt des Kits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotvorgang" class="md-nav__link">
+    Lötvorgang
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inbetriebnahme" class="md-nav__link">
+    Inbetriebnahme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#montage-des-gehauses" class="md-nav__link">
+    Montage des Gehäuses
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -472,7 +559,123 @@
                 
                 
                 <h1 id="lotanleitung">Lötanleitung<a class="headerlink" href="#lotanleitung" title="Permanent link">&para;</a></h1>
-<p>TODO</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Die folgende Lötanleitung bezieht sich auf das bt-trx Kit (v4.1) mit vorbestückten SMD Bauteilen.</p>
+</div>
+<h2 id="inhalt-des-kits">Inhalt des Kits<a class="headerlink" href="#inhalt-des-kits" title="Permanent link">&para;</a></h2>
+<p><img alt="Kit v4.1" src="bt-trx_kit_1024.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th align="center">Menge</th>
+<th align="center">Beschreibung</th>
+<th>Bauteilnummer</th>
+<th>Hinweis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">Vorbestückte Platine</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">ESP32 DevKitC</td>
+<td>U3</td>
+<td>vorgeflashed</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Buchsenleiste 1x19</td>
+<td>-</td>
+<td>für ESP32</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Stiftleiste 1x3</td>
+<td>J2, J5</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Stiftleiste 1x2</td>
+<td>J7</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Stiftleiste 1x4</td>
+<td>J6</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Klinkenbuchse 3.5mm</td>
+<td>J3</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">RJ45 Buchse</td>
+<td>J1</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Taster</td>
+<td>SW1</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Gehäuse</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">Jumper</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">2-4</td>
+<td align="center">Befestigungsschrauben</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Bitte prüfen Sie ob alle o.g. Bauteile im Kit vorhanden sind.</p>
+<h2 id="lotvorgang">Lötvorgang<a class="headerlink" href="#lotvorgang" title="Permanent link">&para;</a></h2>
+<p><img alt="Vorbestückte Platine" src="bt-trx_board_1024.jpg" /></p>
+<p>Idealerweise wird mit den Stiftleisten <strong>J2</strong>, <strong>J5</strong>, <strong>J6</strong> und <strong>J7</strong> begonnen, da diese die geringste Bauhöhe aufweisen</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweise zu den Stiftleisten</p>
+<ul>
+<li>Die Stiftleiste <strong>J2</strong> wird nur benötigt, falls ein PTT Taster nicht via Klinkenstecker verbunden werden soll, sondern direkt im Gehäuse verbaut wird.</li>
+<li>Die Stiftleiste <strong>J7</strong> wird nur benötigt, falls der Taster SW1 aus dem Gehäuse herrausgeführt werden soll. z.B. falls das bt-trx schwer erreichbar verbaut werden soll.</li>
+<li>Die Stiftleiste <strong>J6</strong> ist eine optionale Herausführung des I2C-Bus des ESP32. Diese wird aktuell nicht verwendet und könnte in Zukunft z.B. für ein Display verwendet werden.</li>
+</ul>
+</div>
+<p>Als nächstes sollte der Taster SW1 aufgelötet werden. Gefolgt von der RJ45 Buchse <strong>J1</strong> und der Klinkenbuchse <strong>J3</strong>. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.</p>
+<p>Zuguterletzt folgt der ESP32 (<strong>U3</strong>). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden. </p>
+<p>Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleisten vor dem Verlöten auf den ESP32 gesteckt und so eine senkrechte Montage gewährleistet.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Die USB-Buchse des ESP32 muss bei der Montage zum Platinenrand hin orientiert sein</p>
+</div>
+<p><img alt="Vollbestückte Platine" src="bt-trx_assembled_1024.jpg" /></p>
+<h2 id="inbetriebnahme">Inbetriebnahme<a class="headerlink" href="#inbetriebnahme" title="Permanent link">&para;</a></h2>
+<p>Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel mit Strom versorgt. </p>
+<p>Nun sollten die bersteinfarbende sowie die blaue LED dauerleuchten.</p>
+<h2 id="montage-des-gehauses">Montage des Gehäuses<a class="headerlink" href="#montage-des-gehauses" title="Permanent link">&para;</a></h2>
+<p>Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem 3D Drucker [Link einfügen] gefertigt werden.</p>
+<p>Nun kann, wenn noch nicht geschehen, das <a href="../Anschlusskabel">Anschlusskabel</a> und der <a href="../PTT-Taster">PTT-Taster</a> gefertigt werden.</p>
+<p>Die weitere Inbetriebnahme kann nun wie <a href="../../30_Bedienung/Anschluss">hier</a> beschrieben erfolgen.</p>
                 
                   
                 
