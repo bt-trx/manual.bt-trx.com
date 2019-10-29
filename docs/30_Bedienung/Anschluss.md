@@ -1,6 +1,6 @@
 # Bedienung
 
-(Beschreibung für dev-board v4.1 und Firmware Version 0.1.3)
+(Beschreibung für dev-board v4.1 und Firmware Version 0.2.0)
 
 ## 1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste
 

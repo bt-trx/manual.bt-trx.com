@@ -1,6 +1,6 @@
 # Kompatibilitätsliste
 
-Diese Geräte wurden bisher mit **bt-trx Firmware Version 0.1.2** getestet.  
+Diese Geräte wurden bisher mit **bt-trx Firmware Version 0.2.0** getestet.  
 Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
 
 ## Autoradios
