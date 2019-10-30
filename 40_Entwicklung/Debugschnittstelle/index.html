@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://manual.bt-trx.com/fehlerbehebung/">
+        <link rel="canonical" href="https://manual.bt-trx.com/40_Entwicklung/Debugschnittstelle/">
       
       
       
@@ -38,13 +38,13 @@
     
     
       
-        <title>Fehlerbehebung - manual.bt-trx.com</title>
+        <title>Debugschnittstelle - manual.bt-trx.com</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
     
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
@@ -83,6 +83,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#debugschnittstelle" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -105,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Fehlerbehebung
+                Debugschnittstelle
               
             </span>
           
@@ -216,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Startseite" class="md-nav__link">
+    <a href="../.." title="Startseite" class="md-nav__link">
       Startseite
     </a>
   </li>
@@ -247,7 +251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../10_Allgemein/Kompatibilitätsliste/" title="Kompatibilitätsliste" class="md-nav__link">
+    <a href="../../10_Allgemein/Kompatibilitätsliste/" title="Kompatibilitätsliste" class="md-nav__link">
       Kompatibilitätsliste
     </a>
   </li>
@@ -259,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../10_Allgemein/Stromverbrauch/" title="Stromverbrauch" class="md-nav__link">
+    <a href="../../10_Allgemein/Stromverbrauch/" title="Stromverbrauch" class="md-nav__link">
       Stromverbrauch
     </a>
   </li>
@@ -295,7 +299,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../20_Zusammenbau/Lötanleitung/" title="Lötanleitung" class="md-nav__link">
+    <a href="../../20_Zusammenbau/Lötanleitung/" title="Lötanleitung" class="md-nav__link">
       Lötanleitung
     </a>
   </li>
@@ -307,7 +311,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../20_Zusammenbau/Anschlusskabel/" title="Anschlusskabel" class="md-nav__link">
+    <a href="../../20_Zusammenbau/Anschlusskabel/" title="Anschlusskabel" class="md-nav__link">
       Anschlusskabel
     </a>
   </li>
@@ -319,7 +323,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../20_Zusammenbau/PTT-Taste/" title="PTT-Taste" class="md-nav__link">
+    <a href="../../20_Zusammenbau/PTT-Taste/" title="PTT-Taste" class="md-nav__link">
       PTT-Taste
     </a>
   </li>
@@ -355,7 +359,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../30_Bedienung/Anschluss/" title="Anschluss" class="md-nav__link">
+    <a href="../../30_Bedienung/Anschluss/" title="Anschluss" class="md-nav__link">
       Anschluss
     </a>
   </li>
@@ -367,7 +371,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../30_Bedienung/Funkbetrieb/" title="Funkbetrieb" class="md-nav__link">
+    <a href="../../30_Bedienung/Funkbetrieb/" title="Funkbetrieb" class="md-nav__link">
       Funkbetrieb
     </a>
   </li>
@@ -379,7 +383,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../30_Bedienung/Firmware-Update/" title="Firmware-Update" class="md-nav__link">
+    <a href="../../30_Bedienung/Firmware-Update/" title="Firmware-Update" class="md-nav__link">
       Firmware-Update
     </a>
   </li>
@@ -394,10 +398,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Entwicklung
@@ -413,9 +419,73 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Debugschnittstelle
+      </label>
+    
+    <a href="./" title="Debugschnittstelle" class="md-nav__link md-nav__link--active">
+      Debugschnittstelle
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-fur-die-serielle-verbindung" class="md-nav__link">
+    Parameter für die serielle Verbindung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-fur-ausgaben-auf-der-debugschnittstelle" class="md-nav__link">
+    Beispiel für Ausgaben auf der Debugschnittstelle
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
-    <a href="../40_Entwicklung/Software/" title="Software" class="md-nav__link">
+    <a href="../Software/" title="Software" class="md-nav__link">
       Software
     </a>
   </li>
@@ -433,17 +503,108 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#allgemeines" class="md-nav__link">
+    Allgemeines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-fur-die-serielle-verbindung" class="md-nav__link">
+    Parameter für die serielle Verbindung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-fur-ausgaben-auf-der-debugschnittstelle" class="md-nav__link">
+    Beispiel für Ausgaben auf der Debugschnittstelle
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/fehlerbehebung.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/40_Entwicklung/Debugschnittstelle.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Fehlerbehebung</h1>
-                
-                
+                <h1 id="debugschnittstelle">Debugschnittstelle<a class="headerlink" href="#debugschnittstelle" title="Permanent link">&para;</a></h1>
+<h2 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h2>
+<p>Der ESP32 stellt bei Anschluss per USB an einen Computer mit eine serielle
+Schnittstelle zur Verfügung.</p>
+<p>Über die serielle Schnittstelle werden Logausgaben während des laufenden
+Betriebs ausgegeben. Eine Steuerung von bt-trx ist darüber nicht möglich.</p>
+<p>Allerdings sind diese Daten sehr wichtig zur Identifikation und Behebung von
+(Verbindungs-)problemen. Nach Möglichkeit sollte bei jeder Support-Anfrage
+das Log der seriellen Debugschnittstelle mitgeschickt werden.</p>
+<h2 id="parameter-fur-die-serielle-verbindung">Parameter für die serielle Verbindung<a class="headerlink" href="#parameter-fur-die-serielle-verbindung" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Unter Windows und macOS sind dafür eventuell Treiber notwendig. Weitere
+Hinweise zum Herstellen der Verbindung findet man auf der
+<a href="https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html">Herstellerseite des ESP32</a>.</p>
+</div>
+<ul>
+<li>Baud rate: 115200</li>
+<li>Data bits = 8</li>
+<li>Stop bits = 1</li>
+<li>Parity = N</li>
+</ul>
+<h2 id="beispiel-fur-ausgaben-auf-der-debugschnittstelle">Beispiel für Ausgaben auf der Debugschnittstelle<a class="headerlink" href="#beispiel-fur-ausgaben-auf-der-debugschnittstelle" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>bt-trx Hardware: dev-board v4.1
+bt-trx Firmware: v0.2.0
+&gt; AT
+&lt; WRAP THOR AI (6.1.0 build 1022)
+&lt; Copyright (c) 2003-2015 Bluegiga Technologies Inc.
+&lt; READY.
+ERROR: can&#39;t reach WT32i module
+&gt; AT
+&lt; OK
+STATE: CONFIGURE
+&gt; SET BT BDADDR
+&lt; SET BT BDADDR 88:6b:0f:ee:6d:fb
+&gt; SET BT NAME bt-trx-ee6dfb
+&gt; SET PROFILE HFP-AG ON
+&gt; SET BT CLASS 400204
+&gt; SET BT SSP 1 0
+&gt; SET BT FILTER 200400 200400
+&gt; SET BT AUTH * 0000
+&gt; SET CONTROL CONFIG 0001 0000 00A0 1100
+&gt; SET CONTROL ECHO 5
+&gt; SET CONTROL GAIN 8 10
+STATE: INQUIRY
+&gt; INQUIRY 5 NAME
+...
+...
+</pre></div>
                 
                   
                 
@@ -461,6 +622,41 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../30_Bedienung/Firmware-Update/" title="Firmware-Update" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Firmware-Update
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Software/" title="Software" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Software
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -473,7 +669,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/bt-trx" class="md-footer-social__link fa fa-github"></a>
     
@@ -485,9 +681,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
   </body>

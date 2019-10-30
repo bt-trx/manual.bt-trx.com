@@ -473,6 +473,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../40_Entwicklung/Debugschnittstelle/" title="Debugschnittstelle" class="md-nav__link">
+      Debugschnittstelle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../40_Entwicklung/Software/" title="Software" class="md-nav__link">
       Software
     </a>
@@ -559,22 +571,25 @@ einem GPIO (3.3 V, max. 20 mA) des ESP32 verbunden, der den PTT-Status anzeigt
 ("UC_PTT_LED").<br />
 An diesen Kontakt kann eine LED (mit Vorwiderstand) angeschlossen werden, um
 den aktuellen PTT Status widerzuspiegeln.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
 <p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
 Er entscheidet,</p>
 <ul>
 <li>ob der PTT Taster direkt zum Transceiver
 durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder</li>
 <li>ob der ESP32
-das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden ).</li>
+das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
+für "Soft-PTT" Funktionen.</li>
 </ul>
-<p>Letzteres ist notwendig, um die folgenden "Soft-PTT" Funktionen nutzen zu können.</p>
+</div>
 <h2 id="soft-ptt">Soft-PTT<a class="headerlink" href="#soft-ptt" title="Permanent link">&para;</a></h2>
 <p>"Soft-PTT" ist kurz für "Software-PTT" und beschreibt Komfort-Funktionen, die
 mit einer direkten Verbindung der PTT-Taste an den Transceiver nicht möglich
 wären.<br />
 Daher wird für Soft-PTT der ESP32 zwischen Taster und Transceiver geschaltet,
 damit das PTT Signal per Software gesteuert werden kann.<br />
-Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper J5 auf der
+Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper <strong>J5</strong> auf der
 Stellung "uC" sein (Pins 2-3 verbunden).
 Aktuell sind folgende Funktionen in der Firmware integriert:</p>
 <ul>
