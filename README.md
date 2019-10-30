@@ -8,8 +8,6 @@ This manual is [mkdocs](https://www.mkdocs.org/) based.
 
 `python -m pip install mkdocs-material`
 
-`python -m pip install mkdocs-rtd-dropdown`
-
 **Important: Each file name needs to be the same as the first heading in each file.**
 
 ## View documentation locally
