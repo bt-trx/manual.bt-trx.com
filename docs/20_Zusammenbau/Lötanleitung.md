@@ -10,7 +10,7 @@
 | Menge | Beschreibung          | Bauteilnummer | Hinweis       |
 |:-----:|:---------------------:|---------------|---------------|
 | 1     | Vorbestückte Platine  | -             |               |
-| 1     | ESP32 DevKitC         | U3            | vorgeflashed  |
+| 1     | ESP32 DevKitC         | U3            | Firmware v0.2.0 ist bereits aufgespielt |
 | 2     | Buchsenleiste 1x19    | -             | für ESP32     |
 | 2     | Stiftleiste 1x3       | J2, J5        |               |
 | 1     | Stiftleiste 1x2       | J7            |               |
@@ -19,8 +19,8 @@
 | 1     | RJ45 Buchse           | J1            |               |
 | 1     | Taster                | SW1           |               |
 | 1     | Gehäuse               | -             |               |
-| 1     | Jumper                | -             |               |
-| 2-4   | Befestigungsschrauben | -             |               |
+| 1     | Jumper                | -             | für J5        |
+| 2     | Befestigungsschrauben | -             |               |
 
 Bitte prüfen Sie ob alle o.g. Bauteile im Kit vorhanden sind.
 
@@ -35,9 +35,21 @@ Idealerweise wird mit den Stiftleisten **J2**, **J5**, **J6** und **J7** begonne
     * Die Stiftleiste **J7** wird nur benötigt, falls der Taster SW1 aus dem Gehäuse herrausgeführt werden soll. z.B. falls das bt-trx schwer erreichbar verbaut werden soll.
     * Die Stiftleiste **J6** ist eine optionale Herausführung des I2C-Bus des ESP32. Diese wird aktuell nicht verwendet und könnte in Zukunft z.B. für ein Display verwendet werden.
 
-Als nächstes sollte der Taster SW1 aufgelötet werden. Gefolgt von der RJ45 Buchse **J1** und der Klinkenbuchse **J3**. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.
+!!! note "Hinweis zum PTT-select Jumper J5"
+    Der **Jumper J5** muss für den Funkbetrieb **in jedem Fall** gesteckt sein.  
+    Er entscheidet,
 
-Zuguterletzt folgt der ESP32 (**U3**). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden. 
+    * ob der PTT Taster direkt zum Transceiver
+    durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder
+    * ob der ESP32
+    das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
+    für "Soft-PTT" Funktionen.
+
+    Weitere Informationen dazu im Kapitel [PTT-Taste](../PTT-Taste/#soft-ptt).
+
+Als nächstes sollte der Taster **SW1** aufgelötet werden. Gefolgt von der RJ45 Buchse **J1** und der Klinkenbuchse **J3**. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.
+
+Zuguterletzt folgt der ESP32 (**U3**). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden.
 
 Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleisten vor dem Verlöten auf den ESP32 gesteckt und so eine senkrechte Montage gewährleistet.
 
@@ -46,16 +58,24 @@ Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleist
 
 ![Vollbestückte Platine](bt-trx_assembled_1024.jpg)
 
+## Montage in das Gehäuse
+
+Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse
+befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem
+3D Drucker (Link folgt) gefertigt werden.
+
 ## Inbetriebnahme
 
-Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel mit Strom versorgt. 
+Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel oder
+über J1 (siehe [Anschlusskabel](../Anschlusskabel)) mit Strom versorgt.
 
-Nun sollten die bersteinfarbende LED (Spannungsversorgung) dauerleuchten.
+Da der ESP32 vor der Auslieferung bereits mit der aktuellen bt-trx Firmware
+bespielt wurde, kann sofort losgelegt werden.
+Nach dem kurzen Bootvorgang blinkt die blaue LED und zeigt damit an, dass
+Bluetooth-Geräte in der Umgebung gesucht werden.
 
-## Montage des Gehäuses
+Nun kann, falls noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel)
+und der [PTT-Taster](../PTT-Taster) angeschlossen werden.
 
-Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem 3D Drucker [Link einfügen] gefertigt werden.
-
-Nun kann, wenn noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel) und der [PTT-Taster](../PTT-Taster) gefertigt werden.
-
-Die weitere Inbetriebnahme kann nun wie [hier](../../30_Bedienung/Anschluss) beschrieben erfolgen.
+Die weitere Inbetriebnahme kann nun wie [hier](../../30_Bedienung/Anschluss)
+beschrieben erfolgen.

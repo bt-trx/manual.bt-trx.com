@@ -78,7 +78,7 @@ Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
 
 | Pin | Farbe | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
 |:---:|:-----:|---------------------|:-----:|---------------|
-| 1   | o     | Keypard Serial      | --    | --            |
+| 1   | o     | Keypad Serial      | --    | --            |
 | 2   | O     | --                  | --    | --            |
 | 3   | g     | MIC (600 Ohm)       | G     | AUDIO_OUT     |
 | 4   | B     | GND (MIC)           | BR    | --            |

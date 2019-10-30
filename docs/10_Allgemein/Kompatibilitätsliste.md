@@ -1,10 +1,18 @@
 # Kompatibilitätsliste
 
-Stand: Firmware v0.2.0
+!!! note "Hinweis"
+    Diese Daten beziehen sich auf die Firmware Version 0.2.0.
 
-Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen!
+Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen,
+um die Liste noch weiter ausbauen zu können!
 
 ## Autoradios
+
+Dies ist keine abgeschlossene Liste, sondern nur eine Sammlung an Fahrzeugen und
+Geräten, mit denen bt-trx von Benutzern bereits getestet wurde und funktioniert.  
+Sollte man ein ähnliches Radio/Fahrzeug besitzen, stehen die Chancen
+nicht schlecht, dass es ebenso funktioniert - aber es gibt natürlich
+keine Garantie dafür.
 
 ### Integrierte Radios
 

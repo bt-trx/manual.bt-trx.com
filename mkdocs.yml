@@ -42,4 +42,5 @@ nav:
     - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
   - Entwicklung:
+    - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
     - Software: 40_Entwicklung/Software.md

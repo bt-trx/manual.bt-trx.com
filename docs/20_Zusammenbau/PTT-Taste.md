@@ -19,15 +19,15 @@ einem GPIO (3.3 V, max. 20 mA) des ESP32 verbunden, der den PTT-Status anzeigt
 An diesen Kontakt kann eine LED (mit Vorwiderstand) angeschlossen werden, um
 den aktuellen PTT Status widerzuspiegeln.
 
-Der **Jumper J5** muss für den Funkbetrieb **in jedem Fall** gesteckt sein.  
-Er entscheidet,
+!!! note "Hinweis zum PTT-select Jumper J5"
+    Der **Jumper J5** muss für den Funkbetrieb **in jedem Fall** gesteckt sein.  
+    Er entscheidet,
 
-- ob der PTT Taster direkt zum Transceiver
-durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder
-- ob der ESP32
-das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden ).
-
-Letzteres ist notwendig, um die folgenden "Soft-PTT" Funktionen nutzen zu können.
+    * ob der PTT Taster direkt zum Transceiver
+    durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder
+    * ob der ESP32
+    das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
+    für "Soft-PTT" Funktionen.
 
 ## Soft-PTT
 
@@ -36,7 +36,7 @@ mit einer direkten Verbindung der PTT-Taste an den Transceiver nicht möglich
 wären.  
 Daher wird für Soft-PTT der ESP32 zwischen Taster und Transceiver geschaltet,
 damit das PTT Signal per Software gesteuert werden kann.  
-Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper J5 auf der
+Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper **J5** auf der
 Stellung "uC" sein (Pins 2-3 verbunden).
 Aktuell sind folgende Funktionen in der Firmware integriert:
 

@@ -1,6 +1,7 @@
-# Bedienung
+# Anschluss
 
-(Beschreibung für dev-board v4.1 und Firmware Version 0.2.0)
+!!! note "Hinweis"
+    Beschreibung für dev-board v4.1 und Firmware Version 0.2.0
 
 ## 1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste
 
@@ -10,14 +11,18 @@ Der Anschluss ans Funkgerät erfolgt in der Regel über ein
 Eine [PTT-Taste](../Zusammenbau/PTT-Taste) kann direkt in das bt-trx Gehäuse
 integriert (Kontakte J2), oder an die Klinkenbuchse (J3) angeschlossen werden.
 
-!!! note "Hinweis zum PTT-slect Jumper J5"
-    Bitte nicht vergessen, den Jumper zu setzen! Je nach Konfiguration auf:
+!!! note "Hinweis zum PTT-select Jumper J5"
+    Der **Jumper J5** muss für den Funkbetrieb **in jedem Fall** gesteckt sein.  
+    Er entscheidet,
 
-    * **µC:** Hier übernimmt der ESP32 die PTT Steuerung (Empfohlen)
-    * **BTN:** Hier wird das PTT Signal direkt vom Taster weitergeleitet (Kann in einigen Sonderfällen erforderlich sein)
+    * ob der PTT Taster direkt zum Transceiver
+    durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder
+    * ob der ESP32
+    das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
+    für "Soft-PTT" Funktionen.
 
-Nach dem Herstellen der Spannungsversorgung leuchtet die **rote LED**
-(zeigt 3.3 V Betriebsspannung des Controllers und des BT-Moduls an),
+Nach dem Herstellen der Spannungsversorgung leuchtet die **bernsteinfarbene LED**
+(zeigt 3.3 V Betriebsspannung des ESP32 und des BT-Moduls an),
 bt-trx startet automatisch.
 
 ## 2. Herstellen der Bluetooth-Verbindung
