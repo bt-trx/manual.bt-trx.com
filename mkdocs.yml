@@ -43,3 +43,4 @@ nav:
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
   - Entwicklung:
     - Software: 40_Entwicklung/Software.md
+    - Hardware: 40_Entwicklung/Hardware.md
