@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://manual.bt-trx.com/40_Entwicklung/Software/">
+        <link rel="canonical" href="https://manual.bt-trx.com/40_Entwicklung/Hardware/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Software - manual.bt-trx.com</title>
+        <title>Hardware - manual.bt-trx.com</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#software" tabindex="1" class="md-skip">
+      <a href="#hardware" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Software
+                Hardware
               
             </span>
           
@@ -419,6 +419,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../Software/" title="Software" class="md-nav__link">
+      Software
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -430,11 +442,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Software
+        Hardware
       </label>
     
-    <a href="./" title="Software" class="md-nav__link md-nav__link--active">
-      Software
+    <a href="./" title="Hardware" class="md-nav__link md-nav__link--active">
+      Hardware
     </a>
     
       
@@ -455,15 +467,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#styleguide" class="md-nav__link">
-    Styleguide
+  <a href="#schaltplan-und-pcb" class="md-nav__link">
+    Schaltplan und PCB
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
-    Unit-Tests
+  <a href="#testpunkte" class="md-nav__link">
+    Testpunkte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimmer" class="md-nav__link">
+    Trimmer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotbrucken" class="md-nav__link">
+    Lötbrücken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interne-sockel" class="md-nav__link">
+    Interne Sockel
   </a>
   
 </li>
@@ -476,18 +509,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Hardware/" title="Hardware" class="md-nav__link">
-      Hardware
-    </a>
   </li>
 
         
@@ -524,15 +545,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#styleguide" class="md-nav__link">
-    Styleguide
+  <a href="#schaltplan-und-pcb" class="md-nav__link">
+    Schaltplan und PCB
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
-    Unit-Tests
+  <a href="#testpunkte" class="md-nav__link">
+    Testpunkte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trimmer" class="md-nav__link">
+    Trimmer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotbrucken" class="md-nav__link">
+    Lötbrücken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interne-sockel" class="md-nav__link">
+    Interne Sockel
   </a>
   
 </li>
@@ -553,22 +595,54 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/40_Entwicklung/Software.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/40_Entwicklung/Hardware.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h1>
+                <h1 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h1>
 <h2 id="entwicklungsumgebung">Entwicklungsumgebung<a class="headerlink" href="#entwicklungsumgebung" title="Permanent link">&para;</a></h2>
-<p>Die ESP32 Firmware ist in C++ mit dem Arduino-Framework geschrieben.
-Als Build-Umgebung wird PlatformIO verwendet
-(z.B. Visual Studio Code mit PlatformIO Plugin).</p>
-<h2 id="styleguide">Styleguide<a class="headerlink" href="#styleguide" title="Permanent link">&para;</a></h2>
-<p>Es sollte sich an den Google-Styleguide für C++ gehalten werden.
-Die Code-Formatierung wird mittels clang-format automatisch gewartet:
-<code>./tools/code-style.sh src/*.cpp src/*.h</code></p>
-<h2 id="unit-tests">Unit-Tests<a class="headerlink" href="#unit-tests" title="Permanent link">&para;</a></h2>
-<p>Die Unit-Tests für die Software sind mittels gtest umgesetzt. Zur Abstrahierung
-der Hardware-Aufrufe werden gmock Mockups verwendet.</p>
-<p>Die Tests werden mit <code>./test/build.sh</code> durchgeführt.</p>
+<p>Der Schaltplan sowie das PCB wurden mit KiCAD (Version 5.1) enwickelt.</p>
+<h2 id="schaltplan-und-pcb">Schaltplan und PCB<a class="headerlink" href="#schaltplan-und-pcb" title="Permanent link">&para;</a></h2>
+<p>Die PDF zum dev-board v4.1 können hier runtergeladen werden</p>
+<ul>
+<li><a href="./schematic_v4_1.pdf">Schaltplan</a></li>
+<li><a href="./pcb_v4_1.pdf">PCB</a></li>
+</ul>
+<h2 id="testpunkte">Testpunkte<a class="headerlink" href="#testpunkte" title="Permanent link">&para;</a></h2>
+<p>Die folgenden Testpunkte können z.B. zum Einstellen von Pegeln verwendet werden.</p>
+<ul>
+<li><strong>TP1</strong> <em>J1</em> - Audio B IN</li>
+<li><strong>TP2</strong> <em>WT32i</em> - SPK_LN</li>
+<li><strong>TP3</strong> <em>WT32i</em> - SPK_LP</li>
+<li><strong>TP4</strong> <em>WT32i</em> - MIC_LP</li>
+<li><strong>TP5</strong> <em>WT32i</em> - MIC_LN</li>
+<li><strong>TP6</strong> <em>J1</em> - Audio OUT</li>
+<li><strong>TP7</strong> <em>J1</em> - Audio A IN</li>
+<li><strong>TP8</strong> GND</li>
+</ul>
+<h2 id="trimmer">Trimmer<a class="headerlink" href="#trimmer" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>RV1</strong> Pegel Audio B IN</li>
+<li><strong>RV2</strong> Pegel Audio OUT (im Kit nicht bestückt!)</li>
+<li><strong>RV3</strong> Pegel Audio A IN</li>
+</ul>
+<h2 id="lotbrucken">Lötbrücken<a class="headerlink" href="#lotbrucken" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>JP1</strong> Enable Audio B (im Kit nicht gesetzt)</li>
+<li><strong>JP2</strong> Brücke wenn RV2 nicht bestückt (im Kit gesetzt)</li>
+<li><strong>JP3</strong> Brücke von Audio A/B zum AD Eingang ESP32 (im Kit nicht gesetzt)</li>
+<li><strong>JP4</strong> Enable PTT Pullup (im Kit gesetzt)</li>
+</ul>
+<h2 id="interne-sockel">Interne Sockel<a class="headerlink" href="#interne-sockel" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>J2</strong> PTT Button</li>
+<li><strong>J5</strong> Jumper für PTT OUT<ul>
+<li>µC: ESP32 setzt PTT (standard)</li>
+<li>BTN: BTT Button wird direkt zum Funkgerät druchgeschleift</li>
+</ul>
+</li>
+<li><strong>J6</strong> I²C Bus ESP32 (wird aktuell nicht verwendet)</li>
+<li><strong>J7</strong> Anschluss für SW1, falls dieser nach außen geführt werden muss.</li>
+</ul>
                 
                   
                 
@@ -589,7 +663,7 @@ der Hardware-Aufrufe werden gmock Mockups verwendet.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../30_Bedienung/Firmware-Update/" title="Firmware-Update" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Software/" title="Software" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -598,25 +672,11 @@ der Hardware-Aufrufe werden gmock Mockups verwendet.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Firmware-Update
+                Software
               </span>
             </div>
           </a>
         
-        
-          <a href="../Hardware/" title="Hardware" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Hardware
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

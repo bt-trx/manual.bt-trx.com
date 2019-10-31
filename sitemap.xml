@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://manual.bt-trx.com/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/10_Allgemein/Kompatibilitätsliste/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/10_Allgemein/Stromverbrauch/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/Lötanleitung/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/Anschlusskabel/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/PTT-Taste/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Anschluss/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Funkbetrieb/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Firmware-Update/</loc>
-     <lastmod>2019-10-30</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://manual.bt-trx.com/40_Entwicklung/Debugschnittstelle/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://manual.bt-trx.com/40_Entwicklung/Software/</loc>
-     <lastmod>2019-10-30</lastmod>
+     <lastmod>2019-10-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://manual.bt-trx.com/40_Entwicklung/Hardware/</loc>
+     <lastmod>2019-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

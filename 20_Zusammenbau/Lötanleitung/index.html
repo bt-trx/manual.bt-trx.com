@@ -342,15 +342,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#montage-in-das-gehause" class="md-nav__link">
-    Montage in das Gehäuse
+  <a href="#inbetriebnahme" class="md-nav__link">
+    Inbetriebnahme
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inbetriebnahme" class="md-nav__link">
-    Inbetriebnahme
+  <a href="#montage-des-gehauses" class="md-nav__link">
+    Montage des Gehäuses
   </a>
   
 </li>
@@ -480,8 +480,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../40_Entwicklung/Debugschnittstelle/" title="Debugschnittstelle" class="md-nav__link">
-      Debugschnittstelle
+    <a href="../../40_Entwicklung/Software/" title="Software" class="md-nav__link">
+      Software
     </a>
   </li>
 
@@ -492,8 +492,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../40_Entwicklung/Software/" title="Software" class="md-nav__link">
-      Software
+    <a href="../../40_Entwicklung/Hardware/" title="Hardware" class="md-nav__link">
+      Hardware
     </a>
   </li>
 
@@ -538,15 +538,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#montage-in-das-gehause" class="md-nav__link">
-    Montage in das Gehäuse
+  <a href="#inbetriebnahme" class="md-nav__link">
+    Inbetriebnahme
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inbetriebnahme" class="md-nav__link">
-    Inbetriebnahme
+  <a href="#montage-des-gehauses" class="md-nav__link">
+    Montage des Gehäuses
   </a>
   
 </li>
@@ -597,7 +597,7 @@
 <td align="center">1</td>
 <td align="center">ESP32 DevKitC</td>
 <td>U3</td>
-<td>Firmware v0.2.0 ist bereits aufgespielt</td>
+<td>vorgeflashed</td>
 </tr>
 <tr>
 <td align="center">2</td>
@@ -651,10 +651,10 @@
 <td align="center">1</td>
 <td align="center">Jumper</td>
 <td>-</td>
-<td>für J5</td>
+<td></td>
 </tr>
 <tr>
-<td align="center">2</td>
+<td align="center">2-4</td>
 <td align="center">Befestigungsschrauben</td>
 <td>-</td>
 <td></td>
@@ -673,42 +673,21 @@
 <li>Die Stiftleiste <strong>J6</strong> ist eine optionale Herausführung des I2C-Bus des ESP32. Diese wird aktuell nicht verwendet und könnte in Zukunft z.B. für ein Display verwendet werden.</li>
 </ul>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
-<p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
-Er entscheidet,</p>
-<ul>
-<li>ob der PTT Taster direkt zum Transceiver
-durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder</li>
-<li>ob der ESP32
-das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
-für "Soft-PTT" Funktionen.</li>
-</ul>
-<p>Weitere Informationen dazu im Kapitel <a href="../PTT-Taste/#soft-ptt">PTT-Taste</a>.</p>
-</div>
-<p>Als nächstes sollte der Taster <strong>SW1</strong> aufgelötet werden. Gefolgt von der RJ45 Buchse <strong>J1</strong> und der Klinkenbuchse <strong>J3</strong>. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.</p>
-<p>Zuguterletzt folgt der ESP32 (<strong>U3</strong>). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden.</p>
+<p>Als nächstes sollte der Taster SW1 aufgelötet werden. Gefolgt von der RJ45 Buchse <strong>J1</strong> und der Klinkenbuchse <strong>J3</strong>. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.</p>
+<p>Zuguterletzt folgt der ESP32 (<strong>U3</strong>). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden. </p>
 <p>Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleisten vor dem Verlöten auf den ESP32 gesteckt und so eine senkrechte Montage gewährleistet.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Die USB-Buchse des ESP32 muss bei der Montage zum Platinenrand hin orientiert sein</p>
 </div>
 <p><img alt="Vollbestückte Platine" src="bt-trx_assembled_1024.jpg" /></p>
-<h2 id="montage-in-das-gehause">Montage in das Gehäuse<a class="headerlink" href="#montage-in-das-gehause" title="Permanent link">&para;</a></h2>
-<p>Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse
-befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem
-3D Drucker (Link folgt) gefertigt werden.</p>
 <h2 id="inbetriebnahme">Inbetriebnahme<a class="headerlink" href="#inbetriebnahme" title="Permanent link">&para;</a></h2>
-<p>Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel oder
-über J1 (siehe <a href="../Anschlusskabel">Anschlusskabel</a>) mit Strom versorgt.</p>
-<p>Da der ESP32 vor der Auslieferung bereits mit der aktuellen bt-trx Firmware
-bespielt wurde, kann sofort losgelegt werden.
-Nach dem kurzen Bootvorgang blinkt die blaue LED und zeigt damit an, dass
-Bluetooth-Geräte in der Umgebung gesucht werden.</p>
-<p>Nun kann, falls noch nicht geschehen, das <a href="../Anschlusskabel">Anschlusskabel</a>
-und der <a href="../PTT-Taster">PTT-Taster</a> angeschlossen werden.</p>
-<p>Die weitere Inbetriebnahme kann nun wie <a href="../../30_Bedienung/Anschluss">hier</a>
-beschrieben erfolgen.</p>
+<p>Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel mit Strom versorgt. </p>
+<p>Nun sollten die bersteinfarbende LED (Spannungsversorgung) dauerleuchten.</p>
+<h2 id="montage-des-gehauses">Montage des Gehäuses<a class="headerlink" href="#montage-des-gehauses" title="Permanent link">&para;</a></h2>
+<p>Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem 3D Drucker [Link einfügen] gefertigt werden.</p>
+<p>Nun kann, wenn noch nicht geschehen, das <a href="../Anschlusskabel">Anschlusskabel</a> und der <a href="../PTT-Taster">PTT-Taster</a> gefertigt werden.</p>
+<p>Die weitere Inbetriebnahme kann nun wie <a href="../../30_Bedienung/Anschluss">hier</a> beschrieben erfolgen.</p>
                 
                   
                 
