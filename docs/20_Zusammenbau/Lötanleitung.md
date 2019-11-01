@@ -56,6 +56,6 @@ Nun sollten die bersteinfarbende LED (Spannungsversorgung) dauerleuchten.
 
 Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem 3D Drucker [Link einfügen] gefertigt werden.
 
-Nun kann, wenn noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel) und der [PTT-Taster](../PTT-Taster) gefertigt werden.
+Nun kann, wenn noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel) und der [PTT-Taster](../PTT-Taste) gefertigt werden.
 
 Die weitere Inbetriebnahme kann nun wie [hier](../../30_Bedienung/Anschluss) beschrieben erfolgen.
