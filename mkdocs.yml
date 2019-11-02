@@ -17,6 +17,11 @@ theme:
   font: false
 
 # Customization
+plugins:
+  - pdf-export:
+      verbose: false
+      combined: true
+      enabled_if_env: ENABLE_PDF_EXPORT
 extra:
   version: 0.2.0
   social:

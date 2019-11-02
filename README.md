@@ -8,7 +8,7 @@ This manual is [mkdocs](https://www.mkdocs.org/) based.
 
 `python -m pip install mkdocs-material`
 
-`python -m pip install mkdocs-rtd-dropdown`
+`python -m pip install mkdocs-pdf-export-plugin`
 
 **Important: Each file name needs to be the same as the first heading in each file.**
 
