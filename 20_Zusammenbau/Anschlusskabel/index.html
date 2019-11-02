@@ -637,7 +637,7 @@
                 
                 
                 <h1 id="anschlusskabel">Anschlusskabel<a class="headerlink" href="#anschlusskabel" title="Permanent link">&para;</a></h1>
-<p>Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, aus einem
+<p>Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, z.B. aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.</p>
 <p>Da die Funkgeräte an der Mikrofonbuchse nicht immer eine passende Versorgungsspannung bzw. -leistung liefern,
 kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarettenanzünder).</p>
@@ -647,69 +647,76 @@ kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarette
 <li>Mikro-USB Buchse des ESP32</li>
 </ul>
 <p>Informationen zum Stromverbrauch gibt es <a href="../../10_Allgemein/Stromverbrauch">hier</a>.</p>
-<p><img alt="sdfs" src="bt-trx_connectors.png" /></p>
+<p><img alt="Übersicht der Anschlüsse" src="bt-trx_connectors.png" /></p>
 <p><strong>In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!</strong></p>
 <h2 id="belegung-rj45-buchse-j1">Belegung RJ45 Buchse (J1)<a class="headerlink" href="#belegung-rj45-buchse-j1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th align="center">Pin</th>
-<th align="center">Kürzel</th>
-<th>Farbe</th>
 <th>Signal bt-trx</th>
+<th>Farbe</th>
+<th align="center">Kürzel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center">1</td>
-<td align="center">o</td>
-<td>orange/weiß</td>
 <td>CAT_TX</td>
+<td>orange/weiß</td>
+<td align="center">o</td>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">O</td>
-<td>orange</td>
 <td>AUDIO_IN_B</td>
+<td>orange</td>
+<td align="center">O</td>
 </tr>
 <tr>
 <td align="center">3</td>
-<td align="center">g</td>
-<td>grün/weiß</td>
 <td>CAT_RX</td>
+<td>grün/weiß</td>
+<td align="center">g</td>
 </tr>
 <tr>
 <td align="center">4</td>
-<td align="center">B</td>
-<td>blau</td>
 <td>AUDIO_IN_A</td>
+<td>blau</td>
+<td align="center">B</td>
 </tr>
 <tr>
 <td align="center">5</td>
-<td align="center">b</td>
-<td>blau/weiß</td>
 <td>PTT</td>
+<td>blau/weiß</td>
+<td align="center">b</td>
 </tr>
 <tr>
 <td align="center">6</td>
-<td align="center">G</td>
-<td>grün</td>
 <td>AUDIO_OUT</td>
+<td>grün</td>
+<td align="center">G</td>
 </tr>
 <tr>
 <td align="center">7</td>
-<td align="center">br</td>
-<td>braun/weiß</td>
 <td>V_IN (5...15 V DC)</td>
+<td>braun/weiß</td>
+<td align="center">br</td>
 </tr>
 <tr>
 <td align="center">8</td>
-<td align="center">BR</td>
-<td>braun</td>
 <td>GND</td>
+<td>braun</td>
+<td align="center">BR</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td></td>
+<td>Farbkodierung: EIA/TIA 568B</td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
+<p><img alt="RJ45 Pinnummerierung" src="bt-trx_rj45_pinnumbering.png" /></p>
 <h2 id="belegung-funkgerat">Belegung Funkgerät<a class="headerlink" href="#belegung-funkgerat" title="Permanent link">&para;</a></h2>
 <p>Hier ist eine Sammlung der Steckerbelegungen diverser Funkgeräte und der
 entsprechenden Signale des bt-trx.</p>
