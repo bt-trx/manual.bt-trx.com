@@ -1,6 +1,6 @@
 # Anschlusskabel
 
-Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, aus einem
+Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, z.B. aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.
 
 Da die Funkgeräte an der Mikrofonbuchse nicht immer eine passende Versorgungsspannung bzw. -leistung liefern,
@@ -13,22 +13,25 @@ bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
 Informationen zum Stromverbrauch gibt es [hier](../../10_Allgemein/Stromverbrauch).
 
-![sdfs](bt-trx_connectors.png)
+![Übersicht der Anschlüsse](bt-trx_connectors.png)
 
 **In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
 
 ## Belegung RJ45 Buchse (J1)
 
-| Pin | Kürzel | Farbe       | Signal bt-trx |
-|:---:|:------:|-------------|---------------|
-| 1   | o      | orange/weiß | CAT_TX        |
-| 2   | O      | orange      | AUDIO_IN_B    |
-| 3   | g      | grün/weiß   | CAT_RX        |
-| 4   | B      | blau        | AUDIO_IN_A    |
-| 5   | b      | blau/weiß   | PTT           |
-| 6   | G      | grün        | AUDIO_OUT     |
-| 7   | br     | braun/weiß  | V_IN (5...15 V DC) |
-| 8   | BR     | braun       | GND           |
+| Pin | Signal bt-trx | Farbe       | Kürzel |
+|:---:|---------------|-------------|:------:|
+| 1   | CAT_TX        | orange/weiß | o      |
+| 2   | AUDIO_IN_B    | orange      | O      |
+| 3   | CAT_RX        | grün/weiß   | g      |
+| 4   | AUDIO_IN_A    | blau        | B      |
+| 5   | PTT           | blau/weiß   | b      |
+| 6   | AUDIO_OUT     | grün        | G      |
+| 7   | V_IN (5...15 V DC) | braun/weiß  | br     |
+| 8   | GND           | braun       | BR     |
+| | | Farbkodierung: EIA/TIA 568B          | |
+
+![RJ45 Pinnummerierung](bt-trx_rj45_pinnumbering.png)
 
 ## Belegung Funkgerät
 
