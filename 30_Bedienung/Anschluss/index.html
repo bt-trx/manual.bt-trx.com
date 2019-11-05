@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#bedienung" tabindex="1" class="md-skip">
+      <a href="#anschluss" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -453,6 +453,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../40_Entwicklung/Debugschnittstelle/" title="Debugschnittstelle" class="md-nav__link">
+      Debugschnittstelle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../40_Entwicklung/Software/" title="Software" class="md-nav__link">
       Software
     </a>
@@ -529,23 +541,30 @@
                   <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/30_Bedienung/Anschluss.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="bedienung">Bedienung<a class="headerlink" href="#bedienung" title="Permanent link">&para;</a></h1>
-<p>(Beschreibung für dev-board v4.1 und Firmware Version 0.2.0)</p>
+                <h1 id="anschluss">Anschluss<a class="headerlink" href="#anschluss" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Beschreibung für dev-board v4.1 und Firmware Version 0.2.0</p>
+</div>
 <h2 id="1-anschluss-von-funkgerat-spannungsversorgung-und-ptt-taste">1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste<a class="headerlink" href="#1-anschluss-von-funkgerat-spannungsversorgung-und-ptt-taste" title="Permanent link">&para;</a></h2>
 <p>Der Anschluss ans Funkgerät erfolgt in der Regel über ein
 <a href="../Zusammenbau/Anschlusskabel">Adapterkabel</a>.</p>
 <p>Eine <a href="../Zusammenbau/PTT-Taste">PTT-Taste</a> kann direkt in das bt-trx Gehäuse
 integriert (Kontakte J2), oder an die Klinkenbuchse (J3) angeschlossen werden.</p>
 <div class="admonition note">
-<p class="admonition-title">Hinweis zum PTT-slect Jumper J5</p>
-<p>Bitte nicht vergessen, den Jumper zu setzen! Je nach Konfiguration auf:</p>
+<p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
+<p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
+Er entscheidet,</p>
 <ul>
-<li><strong>µC:</strong> Hier übernimmt der ESP32 die PTT Steuerung (Empfohlen)</li>
-<li><strong>BTN:</strong> Hier wird das PTT Signal direkt vom Taster weitergeleitet (Kann in einigen Sonderfällen erforderlich sein)</li>
+<li>ob der PTT Taster direkt zum Transceiver
+durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder</li>
+<li>ob der ESP32
+das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
+für "Soft-PTT" Funktionen.</li>
 </ul>
 </div>
-<p>Nach dem Herstellen der Spannungsversorgung leuchtet die <strong>rote LED</strong>
-(zeigt 3.3 V Betriebsspannung des Controllers und des BT-Moduls an),
+<p>Nach dem Herstellen der Spannungsversorgung leuchtet die <strong>bernsteinfarbene LED</strong>
+(zeigt 3.3 V Betriebsspannung des ESP32 und des BT-Moduls an),
 bt-trx startet automatisch.</p>
 <h2 id="2-herstellen-der-bluetooth-verbindung">2. Herstellen der Bluetooth-Verbindung<a class="headerlink" href="#2-herstellen-der-bluetooth-verbindung" title="Permanent link">&para;</a></h2>
 <p>bt-trx beginnt nach dem Start selbstständig, nach geeigneten Geräten für die
