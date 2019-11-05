@@ -74,8 +74,8 @@ bespielt wurde, kann sofort losgelegt werden.
 Nach dem kurzen Bootvorgang blinkt die blaue LED und zeigt damit an, dass
 Bluetooth-Geräte in der Umgebung gesucht werden.
 
-Nun kann, falls noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel)
-und der [PTT-Taster](../PTT-Taster) angeschlossen werden.
+Nun kann, wenn noch nicht geschehen, das [Anschlusskabel](../Anschlusskabel)
+und die [PTT-Taste](../PTT-Taste) gefertigt werden.
 
 Die weitere Inbetriebnahme kann nun wie [hier](../../30_Bedienung/Anschluss)
 beschrieben erfolgen.

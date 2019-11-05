@@ -17,6 +17,11 @@ theme:
   font: false
 
 # Customization
+plugins:
+  - pdf-export:
+      verbose: false
+      combined: true
+      enabled_if_env: ENABLE_PDF_EXPORT
 extra:
   version: 0.2.0
   social:
@@ -35,6 +40,7 @@ nav:
     - Stromverbrauch: 10_Allgemein/Stromverbrauch.md
   - Zusammenbau:
     - Lötanleitung: 20_Zusammenbau/Lötanleitung.md
+    - Frontblende: 20_Zusammenbau/Frontblende.md
     - Anschlusskabel: 20_Zusammenbau/Anschlusskabel.md
     - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
   - Bedienung:
@@ -44,3 +50,4 @@ nav:
   - Entwicklung:
     - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
     - Software: 40_Entwicklung/Software.md
+    - Hardware: 40_Entwicklung/Hardware.md
