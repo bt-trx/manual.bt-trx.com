@@ -1,7 +1,7 @@
 # Anschluss
 
 !!! note "Hinweis"
-    Beschreibung für dev-board v4.1 und Firmware Version 0.2.0
+    Beschreibung für dev-board v4.1 und Firmware Version 0.2.1
 
 ## 1. Anschluss von Funkgerät, Spannungsversorgung und PTT-Taste
 

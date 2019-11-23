@@ -1,7 +1,7 @@
 # Kompatibilitätsliste
 
 !!! note "Hinweis"
-    Diese Daten beziehen sich auf die Firmware Version 0.2.0.
+    Diese Daten beziehen sich auf die Firmware Version 0.2.1.
 
 Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen,
 um die Liste noch weiter ausbauen zu können!
@@ -38,6 +38,12 @@ keine Garantie dafür.
 | Kenwood KDC-X7200DAB     | ja            | -- |
 | Pioneer AVH-X3500DAB     | ja            | -- |
 | Pioneer AVH-Z5100DAB     | ja            | -- |
+
+## Headsets
+
+| Typ                      | Funktioniert? | Kommentar |
+|--------------------------|:-------------:|-----------|
+| Fontastic NAT+           | ja            | -- |
 
 ## Funkgeräte
 

@@ -25,7 +25,7 @@ plugins:
       combined: true
       enabled_if_env: ENABLE_PDF_EXPORT
 extra:
-  version: 0.2.0
+  version: 0.2.1
   social:
     - type: 'github'
       link: 'https://github.com/bt-trx'
@@ -47,6 +47,7 @@ nav:
     - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
   - Bedienung:
     - Anschluss: 30_Bedienung/Anschluss.md
+    - Konfiguration: 30_Bedienung/Konfiguration.md
     - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
   - Entwicklung:
