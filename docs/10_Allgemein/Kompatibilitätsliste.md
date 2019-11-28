@@ -44,6 +44,8 @@ keine Garantie dafür.
 | Typ                      | Funktioniert? | Kommentar |
 |--------------------------|:-------------:|-----------|
 | Fontastic NAT+           | ja            | -- |
+| Jabra Evolve 65          | ja            | -- |
+| Jabra Freeway HFS100     | ja            | -- |
 
 ## Funkgeräte
 
