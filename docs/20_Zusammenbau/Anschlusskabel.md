@@ -3,13 +3,22 @@
 Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, z.B. aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.
 
-Da die Funkgeräte an der Mikrofonbuchse nicht immer eine passende Versorgungsspannung bzw. -leistung liefern,
-kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarettenanzünder).
+Da die Ausgänge der Funkgeräte nicht immer eine passende Versorgungsspannung
+bzw. -leistung liefern, kann es erforderlich sein, die Spannung extern
+zuzuführen (z.B. über Zigarettenanzünder oder USB).
 
-bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+!!! info "Anschluss über NF-Buchse"
+    bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen
+    werden.  
+    Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem
+    Handmikrofon.  
+    Somit kann man beides benutzen, ohne Umstecken zu müssen.
 
-- Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder
-- Mikro-USB Buchse des ESP32
+!!! info "Spannungsversorgung"
+    bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+
+    - Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder
+    - Mikro-USB Buchse des ESP32
 
 Informationen zum Stromverbrauch gibt es [hier](../../10_Allgemein/Stromverbrauch).
 

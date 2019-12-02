@@ -25,7 +25,7 @@ plugins:
       combined: true
       enabled_if_env: ENABLE_PDF_EXPORT
 extra:
-  version: 0.2.1
+  version: 0.3.0
   social:
     - type: 'github'
       link: 'https://github.com/bt-trx'
@@ -46,11 +46,12 @@ nav:
     - Anschlusskabel: 20_Zusammenbau/Anschlusskabel.md
     - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
   - Bedienung:
-    - Anschluss: 30_Bedienung/Anschluss.md
+    - Inbetriebnahme: 30_Bedienung/Inbetriebnahme.md
     - Konfiguration: 30_Bedienung/Konfiguration.md
     - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
   - Entwicklung:
     - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
+    - Flashen der Firmware über USB: 40_Entwicklung/Flashen der Firmware über USB.md
     - Software: 40_Entwicklung/Software.md
     - Hardware: 40_Entwicklung/Hardware.md

@@ -1,7 +1,7 @@
 # Kompatibilitätsliste
 
 !!! note "Hinweis"
-    Diese Daten beziehen sich auf die Firmware Version 0.2.1.
+    Diese Daten beziehen sich auf die Firmware Version 0.3.0.
 
 Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen,
 um die Liste noch weiter ausbauen zu können!
@@ -19,16 +19,17 @@ keine Garantie dafür.
 | Typ                      | Baujahr | Funktioniert? | Kommentar |
 |--------------------------|:-------:|:-------------:|-----------|
 | Citroën C5               | 2019    |ja            |  |
-| Fiat Fiorino             |         |ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (z.B. `SET BT AUTH * 1234`) |
+| Fiat Fiorino             |         |ja            | Die vom Fahrzeug vorgegebene PIN muss im  bt-trx Webinterface eingestellt werden. |
 | Ford Ranger              |         |ja            |  |
 | Jeep Wrangler            |         |              | Work in Progress |
 | Mercedes GLC             | 2017    |ja            |  |
 | Mini Cooper              | 2009    |ja            | Pineingabe am Fahrzeug notwendig (bei bt-trx voreingestellt: 0000) |
-| Nissan Qashqai           |         |ja            | Die vom Fahrzeug vorgegebene PIN muss in der bt-trx Firmware eingestellt werden. (z.B. `SET BT AUTH * 1234`) |
+| Nissan Qashqai           |         |ja            | Die vom Fahrzeug vorgegebene PIN muss im  bt-trx Webinterface eingestellt werden. |
 | SEAT Ateca               |         |               | Work in Progress |
+| Skoda Octavia 5E (Columbus) | 2013 |ja            |  |
 | Tesla Model S            |         |ja            |  |
 | VW Caddy                 | 2014    |ja            | Radio: RCD330+ |
-| VW Passat                | 2017    |ja            |  |
+| VW Passat (Discover Pro) | 2017    |ja            |  |
 
 ### Zubehörradios
 
@@ -46,6 +47,13 @@ keine Garantie dafür.
 | Fontastic NAT+           | ja            | -- |
 | Jabra Evolve 65          | ja            | -- |
 | Jabra Freeway HFS100     | ja            | -- |
+| YAESU SSM-BT10           | ja            | -- |
+
+## BLE (Bluetooth Low Energy) PTT Buttons
+
+| Typ                      | Funktioniert? | Kommentar |
+|--------------------------|:-------------:|-----------|
+| Anytone PTT Button       | ja            | Button für Anytone AT-D878UV (BP-01) |
 
 ## Funkgeräte
 
@@ -54,5 +62,6 @@ keine Garantie dafür.
 | Anytone AT-D878UV        | ja            | -- |
 | Kenwood TM-D700          | ja            | -- |
 | Kenwood TM-D710          | ja            | -- |
+| Kenwood TM-V71          | ja             | Versorgungsspannung aus Mike-Buchse reicht nicht |
 | Tytera MD-380 / MD-390   | ja            | -- |
 | Wouxun KG-UV6D           | ja            | -- |

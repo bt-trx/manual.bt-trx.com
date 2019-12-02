@@ -9,10 +9,15 @@
     unter [http://bt-trx.local](http://bt-trx.local) oder
     [http://192.168.4.1](http://192.168.4.1) erreichen.
 
+!!! info "Javascript notwendig"
+    Um das Webinterface zu nutzen, muss im Browser Javascript aktiviert sein.
+
+!!! info "BLE im WLAN-Modus nicht verfügbar"
+    Während der WLAN-Modus aktiv ist, kann keine Verbindung mit einem BLE PTT
+    Button hergestellt werden.  
+    BLE ist währenddessen deaktiviert.
 
 ![Webinterface Konfiguration](konfiguration.png)
-
-Um das Webinterface zu nutzen, muss im Browser Javascript aktiviert sein.
 
 ## Einstellmöglichkeiten
 
@@ -42,10 +47,10 @@ Signalverzögerung der Freisprecheinrichtung auszugleichen.
 #### Bluetooth PIN Code
 
 In der Regel ist für das Bluetooth Pairing keine Eingabe einer PIN erforderlich.
-Der angezeigte PIN Code kann einfach bestätigt werden.
+Der angezeigte PIN Code kann einfach bestätigt werden.  
 Manche Geräte verlangen die Eingabe eines vorgegebenen, 4-stelligen PIN
-Codes (siehe Kommentare in der [Kompatibilitätsliste](../../10_Allgemein/Kompatibilitätsliste/)).
-Hier kann der vorgegebene Code eingegeben werden.
+Codes (siehe Kommentare in der [Kompatibilitätsliste](../../10_Allgemein/Kompatibilitätsliste/)).  
+Hier kann der vorgegebene Code eingegeben werden.  
 Falls bereits ein Versuch mit falscher PIN stattgefunden hat, sollten mit dem
 Button "Reset Bluetooth Pairings" (siehe unten) die Pairings im bt-trx
 zurückgesetzt werden, um einen sauberen neuen Versuch zu starten.
