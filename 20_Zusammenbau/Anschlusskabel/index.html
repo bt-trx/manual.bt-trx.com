@@ -442,8 +442,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../30_Bedienung/Anschluss/" title="Anschluss" class="md-nav__link">
-      Anschluss
+    <a href="../../30_Bedienung/Inbetriebnahme/" title="Inbetriebnahme" class="md-nav__link">
+      Inbetriebnahme
     </a>
   </li>
 
@@ -516,6 +516,18 @@
   <li class="md-nav__item">
     <a href="../../40_Entwicklung/Debugschnittstelle/" title="Debugschnittstelle" class="md-nav__link">
       Debugschnittstelle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../40_Entwicklung/Flashen der Firmware über USB/" title="Flashen der Firmware über USB" class="md-nav__link">
+      Flashen der Firmware über USB
     </a>
   </li>
 
@@ -652,13 +664,25 @@
                 <h1 id="anschlusskabel">Anschlusskabel<a class="headerlink" href="#anschlusskabel" title="Permanent link">&para;</a></h1>
 <p>Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, z.B. aus einem
 Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.</p>
-<p>Da die Funkgeräte an der Mikrofonbuchse nicht immer eine passende Versorgungsspannung bzw. -leistung liefern,
-kann es erforderlich sein, die Spannung extern zuzuführen (z.B. über Zigarettenanzünder).</p>
+<p>Da die Ausgänge der Funkgeräte nicht immer eine passende Versorgungsspannung
+bzw. -leistung liefern, kann es erforderlich sein, die Spannung extern
+zuzuführen (z.B. über Zigarettenanzünder oder USB).</p>
+<div class="admonition info">
+<p class="admonition-title">Anschluss über NF-Buchse</p>
+<p>bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen
+werden.<br />
+Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem
+Handmikrofon.<br />
+Somit kann man beides benutzen, ohne Umstecken zu müssen.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Spannungsversorgung</p>
 <p>bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:</p>
 <ul>
 <li>Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder</li>
 <li>Mikro-USB Buchse des ESP32</li>
 </ul>
+</div>
 <p>Informationen zum Stromverbrauch gibt es <a href="../../10_Allgemein/Stromverbrauch">hier</a>.</p>
 <p><img alt="Übersicht der Anschlüsse" src="bt-trx_connectors.png" /></p>
 <p><strong>In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!</strong></p>

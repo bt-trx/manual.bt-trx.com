@@ -350,8 +350,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Anschluss/" title="Anschluss" class="md-nav__link">
-      Anschluss
+    <a href="../Inbetriebnahme/" title="Inbetriebnahme" class="md-nav__link">
+      Inbetriebnahme
     </a>
   </li>
 
@@ -382,9 +382,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Funkbetrieb
+      </label>
+    
     <a href="./" title="Funkbetrieb" class="md-nav__link md-nav__link--active">
       Funkbetrieb
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#herstellen-der-bluetooth-verbindung-zum-autoradio-oder-headset" class="md-nav__link">
+    Herstellen der Bluetooth-Verbindung zum Autoradio oder Headset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herstellen-der-audio-verbindung" class="md-nav__link">
+    Herstellen der Audio-Verbindung
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -443,6 +479,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../40_Entwicklung/Flashen der Firmware über USB/" title="Flashen der Firmware über USB" class="md-nav__link">
+      Flashen der Firmware über USB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../40_Entwicklung/Software/" title="Software" class="md-nav__link">
       Software
     </a>
@@ -483,6 +531,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#herstellen-der-bluetooth-verbindung-zum-autoradio-oder-headset" class="md-nav__link">
+    Herstellen der Bluetooth-Verbindung zum Autoradio oder Headset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herstellen-der-audio-verbindung" class="md-nav__link">
+    Herstellen der Audio-Verbindung
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -497,7 +568,52 @@
                 
                 
                 <h1 id="funkbetrieb">Funkbetrieb<a class="headerlink" href="#funkbetrieb" title="Permanent link">&para;</a></h1>
-<p>Um die Audio-Verbindung herstellen zu können, <strong>muss</strong> die <a href="../Anschluss#2-herstellen-der-bluetooth-verbindung">Bluetooth-Verbindung</a>
+<h2 id="herstellen-der-bluetooth-verbindung-zum-autoradio-oder-headset">Herstellen der Bluetooth-Verbindung zum Autoradio oder Headset<a class="headerlink" href="#herstellen-der-bluetooth-verbindung-zum-autoradio-oder-headset" title="Permanent link">&para;</a></h2>
+<p>bt-trx beginnt nach dem Start selbstständig, nach geeigneten Geräten für die
+Bluetoothverbindung zu suchen und eine Verbindung herzustellen.<br />
+Es wird nur eine Verbindung mit Geräten hergestellt, die das
+"HFP"-Profil unterstützen (Autoradios, bestimmte Headsets). Eine (ungewollte)
+Verbindung mit einem Smartphone kann daher nicht passieren.</p>
+<p><strong>Info:</strong>
+Die Verbindung zu einfachen Bluetooth-Headsets über das "HSP"-Profil wird
+aktuell noch nicht unterstützt, ist aber möglich und wird in einer der kommenden
+Firmware-Versionen eingebaut werden.</p>
+<p>Es kann notwendig sein, das Autoradio zum Verbindungsaufbau in den
+Bluetooth-Pairingmodus zu versetzen, um es für bt-trx sichtbar zu machen.<br />
+In der Regel geschieht dies über einen Menüpunkt
+"Neues Bluetooth-Gerät hinzufügen" o.ä..</p>
+<p>Sobald die Verbindung einmal erfolgeich hergestellt wurde, sollten sich die
+beiden Geräte beim nächsten Start des bt-trx, bzw. des Fahrzeugs automatisch
+miteinander verbinden.</p>
+<p>Die beiden Status-LEDs (grün und blau) liefern folgende Informationen:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Aktivität-LED (grün)</th>
+<th align="center">Bluetooth-LED (blau)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">aus</td>
+<td align="center">blinkt</td>
+<td>BT-Verbindungssuche</td>
+</tr>
+<tr>
+<td align="center">aus</td>
+<td align="center">an</td>
+<td>BT-Verbindung hergestellt</td>
+</tr>
+<tr>
+<td align="center">blinkt</td>
+<td align="center">an</td>
+<td>Audio-Verbindung hergestellt</td>
+</tr>
+</tbody>
+</table>
+<h2 id="herstellen-der-audio-verbindung">Herstellen der Audio-Verbindung<a class="headerlink" href="#herstellen-der-audio-verbindung" title="Permanent link">&para;</a></h2>
+<p>Um die Audio-Verbindung herstellen zu können, <strong>muss</strong> die Bluetooth-Verbindung
 (blaue LED leuchtet) hergestellt sein.
 Die Audioverbindung wird mittels eines simulierten Telefongesprächs hergestellt,
 denn bt-trx verhält sich gegenüber dem Autoradio wie ein Mobiltelefon.</p>

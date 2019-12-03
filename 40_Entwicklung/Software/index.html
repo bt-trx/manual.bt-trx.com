@@ -348,8 +348,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../30_Bedienung/Anschluss/" title="Anschluss" class="md-nav__link">
-      Anschluss
+    <a href="../../30_Bedienung/Inbetriebnahme/" title="Inbetriebnahme" class="md-nav__link">
+      Inbetriebnahme
     </a>
   </li>
 
@@ -432,6 +432,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../Flashen der Firmware über USB/" title="Flashen der Firmware über USB" class="md-nav__link">
+      Flashen der Firmware über USB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -464,6 +476,19 @@
   <a href="#entwicklungsumgebung" class="md-nav__link">
     Entwicklungsumgebung
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erstellen-eines-firmware-binaries" class="md-nav__link">
+    Erstellen eines Firmware Binaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -534,6 +559,19 @@
     Entwicklungsumgebung
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erstellen-eines-firmware-binaries" class="md-nav__link">
+    Erstellen eines Firmware Binaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -574,6 +612,26 @@
 <p>Die ESP32 Firmware ist in C++ mit dem Arduino-Framework geschrieben.
 Als Build-Umgebung wird PlatformIO verwendet
 (z.B. Visual Studio Code mit PlatformIO Plugin).</p>
+<h3 id="erstellen-eines-firmware-binaries">Erstellen eines Firmware Binaries<a class="headerlink" href="#erstellen-eines-firmware-binaries" title="Permanent link">&para;</a></h3>
+<p>Downloaden des Quellcodes von <a href="https://github.com/bt-trx/firmware/releases">Github</a>
+oder clonen des Repositories mit</p>
+<div class="codehilite"><pre><span></span>git clone https://github.com/bt-trx/firmware.git
+</pre></div>
+
+
+<p>Danach wechseln in das Verzeichnis des Quellcodes und compilieren der Firmware</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> firmware
+platformio run
+</pre></div>
+
+
+<p>Das erstelle Firmware-Binary ist dann unter <code>.pio/build/esp/firmware.bin</code>
+zu finden.
+Alternativ kann die Firmware direkt auf einen angesteckten ESP32 geladen werden:</p>
+<div class="codehilite"><pre><span></span>platformio run --target upload
+</pre></div>
+
+
 <h2 id="styleguide">Styleguide<a class="headerlink" href="#styleguide" title="Permanent link">&para;</a></h2>
 <p>Es sollte sich an den Google-Styleguide für C++ gehalten werden.
 Die Code-Formatierung wird mittels clang-format automatisch gewartet:
@@ -602,7 +660,7 @@ der Hardware-Aufrufe werden gmock Mockups verwendet.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Debugschnittstelle/" title="Debugschnittstelle" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Flashen der Firmware über USB/" title="Flashen der Firmware über USB" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -611,7 +669,7 @@ der Hardware-Aufrufe werden gmock Mockups verwendet.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Debugschnittstelle
+                Flashen der Firmware über USB
               </span>
             </div>
           </a>
