@@ -18,6 +18,7 @@ keine Garantie dafür.
 
 | Typ                      | Baujahr | Funktioniert? | Kommentar |
 |--------------------------|:-------:|:-------------:|-----------|
+| BMW 2er                  | 2019    |ja            |  |
 | Citroën C5               | 2019    |ja            |  |
 | Fiat Fiorino             |         |ja            | Die vom Fahrzeug vorgegebene PIN muss im  bt-trx Webinterface eingestellt werden. |
 | Ford Ranger              |         |ja            |  |
