@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://manual.bt-trx.com/30_Bedienung/Firmware-Update/">
+        <link rel="canonical" href="https://manual.bt-trx.com/30_Bedienung/Troubleshooting/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Firmware-Update - manual.bt-trx.com</title>
+        <title>Troubleshooting - manual.bt-trx.com</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#firmware-update" tabindex="1" class="md-skip">
+      <a href="#troubleshooting" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -111,7 +111,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Firmware-Update
+                Troubleshooting
               
             </span>
           
@@ -384,6 +384,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../Firmware-Update/" title="Firmware-Update" class="md-nav__link">
+      Firmware-Update
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -394,22 +406,59 @@
       
     
     
-    <a href="./" title="Firmware-Update" class="md-nav__link md-nav__link--active">
-      Firmware-Update
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Troubleshooting
+      </label>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+    <a href="./" title="Troubleshooting" class="md-nav__link md-nav__link--active">
       Troubleshooting
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-board-v41" class="md-nav__link">
+    dev-board v4.1
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ptt-auf-dauersendung-wenn-bt-trx-stromlos-ist" class="md-nav__link">
+    PTT auf Dauersendung wenn bt-trx stromlos ist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storgerauschbrummen-auf-tx-nf-audio" class="md-nav__link">
+    Störgeräusch/Brummen auf Tx NF Audio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -507,6 +556,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-board-v41" class="md-nav__link">
+    dev-board v4.1
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ptt-auf-dauersendung-wenn-bt-trx-stromlos-ist" class="md-nav__link">
+    PTT auf Dauersendung wenn bt-trx stromlos ist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storgerauschbrummen-auf-tx-nf-audio" class="md-nav__link">
+    Störgeräusch/Brummen auf Tx NF Audio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -517,39 +602,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/30_Bedienung/Firmware-Update.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/bt-trx/manual.bt-trx.com/edit/master/docs/30_Bedienung/Troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="firmware-update">Firmware-Update<a class="headerlink" href="#firmware-update" title="Permanent link">&para;</a></h1>
-<p>Die aktuellste Firmwareversion kann man sich unter
-<a href="https://github.com/bt-trx/firmware/releases">https://github.com/bt-trx/firmware/releases</a>
-("bt-trx_esp32_firmware_x.y.z.bin") herunterladen.</p>
-<p>Eine neue Firmware-Version kann mittels WLAN auf bt-trx aufgespielt werden.</p>
-<div class="admonition note">
-<p class="admonition-title">WLAN-Modus</p>
-<p>Dafür muss bt-trx in den WLAN-Modus versetzt werden. Hierzu hält man SW1
-während des Starts von bt-trx für 5 Sekunden lang gedrückt.
-Wenn der WLAN-Modus erfolgreich gestartet wurde, blinken die beiden
-Status-LEDs kurz gleichzeitig.</p>
-<p>Nun kann man sich mit dem Computer oder dem Smartphone mit dem WLAN "bt-trx"
-verbinden (Passwort: "bt-trx73").
-Sobald man sich verbunden hat, kann man das bt-trx Modul mit einem Browser
-unter <a href="http://bt-trx.local">http://bt-trx.local</a> oder
-<a href="http://192.168.4.1">http://192.168.4.1</a> erreichen.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">bt-trx Update von Firmware &lt;0.3.0 auf 0.3.0 und höher</p>
-<p>Die bt-trx Firmware ab Version 0.3.0 benötigt aufgrund ihrer Größe eine
-Partitionstabelle, die vom Standard-Layout des ESP32 abweicht.<br />
-Diese muss für ein Update von einer Version &lt;0.3.0 auf 0.3.0 und höher
-<a href="../../40_Entwicklung/Flashen&#32;der&#32;Firmware&#32;über&#32;USB">mittels USB</a>  auf den ESP32 aufgespielt werden.</p>
-</div>
-<p><img alt="Webinterface Firmware-Update" src="firmware_update.png" /></p>
-<p>Auf der Website muss mittels "Choose File" die Firmwaredatei (*.bin) ausgewählt
-und mit dem "Update" Button auf das Gerät geschrieben werden.
-<strong>Bitte unbedingt abwarten, bis die Datei komplett hochgeladen wurde!</strong>
-Nach erfolgreichem Upload und Einspielen des Updates startet sich bt-trx
-automatisch neu.</p>
+                <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="dev-board-v41">dev-board v4.1<a class="headerlink" href="#dev-board-v41" title="Permanent link">&para;</a></h2>
+<h3 id="ptt-auf-dauersendung-wenn-bt-trx-stromlos-ist">PTT auf Dauersendung wenn bt-trx stromlos ist<a class="headerlink" href="#ptt-auf-dauersendung-wenn-bt-trx-stromlos-ist" title="Permanent link">&para;</a></h3>
+<p>Bei manchen Funkgeräten (z.B. Yaesu FTM-350, Yaesu FT-8800)
+wird PTT auf Dauer-An interpretiert, sobald bt-trx stromlos ist.
+Dies kann behoben werden, indem bei der PTT Leitung ein 27 kOhm Widerstand in
+Reihe geschaltet wird. Dies sollte bei allen Geräten mit MC-48 Abhilfe schaffen.
+(Danke, Dirk!)</p>
+<h3 id="storgerauschbrummen-auf-tx-nf-audio">Störgeräusch/Brummen auf Tx NF Audio<a class="headerlink" href="#storgerauschbrummen-auf-tx-nf-audio" title="Permanent link">&para;</a></h3>
+<p>Bei manchen Funkgeräten bzw. Setups kann es bei der Tx NF Audio zu
+Störgeräuschen kommen. Folgende Punkte können einzeln oder in Kombination für
+Abhilfe sorgen:</p>
+<ul>
+<li>Versorgung über USB (ggf. aus Akkupack)</li>
+<li>Separate Masseleitung von TP8 (Audio-Out Gnd) zum Transceiver-Gehäuse</li>
+<li>Separate Verkabelung von PTT über Relais/Optokoppler</li>
+</ul>
                 
                   
                 
@@ -570,7 +642,7 @@ automatisch neu.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Funkbetrieb/" title="Funkbetrieb" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Firmware-Update/" title="Firmware-Update" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -579,19 +651,19 @@ automatisch neu.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Funkbetrieb
+                Firmware-Update
               </span>
             </div>
           </a>
         
         
-          <a href="../Troubleshooting/" title="Troubleshooting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../40_Entwicklung/Debugschnittstelle/" title="Debugschnittstelle" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Troubleshooting
+                Debugschnittstelle
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
