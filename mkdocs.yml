@@ -50,6 +50,7 @@ nav:
     - Konfiguration: 30_Bedienung/Konfiguration.md
     - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
     - Firmware-Update: 30_Bedienung/Firmware-Update.md
+    - Troubleshooting: 30_Bedienung/Troubleshooting.md
   - Entwicklung:
     - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
     - Flashen der Firmware über USB: 40_Entwicklung/Flashen der Firmware über USB.md
