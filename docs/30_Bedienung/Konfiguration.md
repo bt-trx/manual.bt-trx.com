@@ -12,7 +12,7 @@
 !!! info "Javascript notwendig"
     Um das Webinterface zu nutzen, muss im Browser Javascript aktiviert sein.
 
-!!! info "BLE im WLAN-Modus nicht verfügbar"
+!!! warning "BLE im WLAN-Modus nicht verfügbar"
     Während der WLAN-Modus aktiv ist, kann keine Verbindung mit einem BLE PTT
     Button hergestellt werden.  
     BLE ist währenddessen deaktiviert.
@@ -35,12 +35,26 @@ werden (-42...+24 dB).
 
 ### PTT
 
+!!! info
+    Für die nachfolgenden PTT Features muss Jumper J5 auf "uC" gesetzt sein
+    ("Soft-PTT Modus").
+
+#### PTT Toggle
+
+Wenn diese Option aktiviert ist, wird PTT beim einmaligen Drücken so lange
+aktiviert, bis es durch nochmaliges Drücken der PTT Taste wieder deaktiviert
+wird.
+
+#### PTT Timeout
+
+Legt fest, wie lange PTT am Stück aktiviert werden kann
+("maximum time of transmit").  
+Erlaubte Werte: 1-9 Minuten (0 deaktiviert den Timeout).
+
 #### PTT Hang Time
 
 Zeit, die PTT nach Loslassen der PTT Taste noch aktiv bleibt, um die
 Signalverzögerung der Freisprecheinrichtung auszugleichen.
-
-**Wichtig:** Jumper J5 muss auf "uC" gesetzt sein ("Soft-PTT Modus").
 
 ### Bluetooth
 
