@@ -6,7 +6,7 @@
 
 Bei manchen Funkgeräten (z.B. Yaesu FTM-350, Yaesu FT-8800)
 wird PTT auf Dauer-An interpretiert, sobald bt-trx stromlos ist.
-Dies kann behoben werden, indem bei der PTT Leitung ein 27 kOhm Widerstand in
+Dies kann behoben werden, indem bei der PTT Leitung ein 39 kOhm Widerstand in
 Reihe geschaltet wird. Dies sollte bei allen Geräten mit MC-48 Abhilfe schaffen.
 (Danke, Dirk!)
 
