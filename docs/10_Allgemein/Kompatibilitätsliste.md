@@ -24,6 +24,7 @@ keine Garantie dafür.
 | Fiat Fiorino             |         |ja             | Die vom Fahrzeug vorgegebene PIN muss im  bt-trx Webinterface eingestellt werden. |
 | Ford Ranger              |         |ja             |  |
 | Jeep Wrangler            |         |               | Work in Progress |
+| Mercedes A-Klasse        | 2012    |ja             | Radio: Audio 20 |
 | Mercedes GLC             | 2017    |ja             |  |
 | Mini Cooper              | 2009    |ja             | Pineingabe am Fahrzeug notwendig (bei bt-trx voreingestellt: 0000) |
 | Nissan Qashqai           |         |ja             | Die vom Fahrzeug vorgegebene PIN muss im  bt-trx Webinterface eingestellt werden. |
@@ -71,6 +72,7 @@ keine Garantie dafür.
 | Tytera MD-380 / MD-390   | ja            | -- |
 | Wouxun KG-UV6D           | ja            | -- |
 | Yaesu FTM-350            | ja            | 1) |
+| Yaesu FT-7900            | ja            | 1) |
 | Yaesu FT-8800            | ja            | 1) |
 
 1) [Dauer-PTT Fix](../30_Bedienung/Troubleshooting.md)
