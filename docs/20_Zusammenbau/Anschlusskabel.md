@@ -20,6 +20,11 @@ zuzuführen (z.B. über Zigarettenanzünder oder USB).
     - Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder
     - Mikro-USB Buchse des ESP32
 
+!!! warning "Externe Absicherung vorsehen!"
+    Auf der Platine befindet sich eine selbstrückstellende (PTC) Sicherung (250 mA Fast Trip, max. 24 DC), 
+    allerdings wird dringend empfohlen, im Anschlusskabel zusätzlich eine konventionelle Sicherung
+    mit entsprechenden Werten einzubauen.
+
 Informationen zum Stromverbrauch gibt es [hier](../../10_Allgemein/Stromverbrauch).
 
 ![Übersicht der Anschlüsse](bt-trx_connectors.png)
