@@ -1,8 +1,5 @@
 # Inbetriebnahme
 
-!!! info "Hinweis"
-    Beschreibung für dev-board v4.1 und Firmware Version 0.3.0
-
 ## 1. Anschluss des Funkgeräts
 
 Der Anschluss ans Funkgerät erfolgt in der Regel über ein

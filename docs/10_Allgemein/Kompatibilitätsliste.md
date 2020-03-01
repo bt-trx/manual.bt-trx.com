@@ -1,7 +1,7 @@
 # Kompatibilitätsliste
 
 !!! note "Hinweis"
-    Diese Daten beziehen sich auf die Firmware Version 0.3.0.
+    Diese Daten beziehen sich auf die Firmware Version 1.0.1.
 
 Wir freuen uns über Erfahrungsberichte mit hier gelisteten oder neuen Modellen,
 um die Liste noch weiter ausbauen zu können!
