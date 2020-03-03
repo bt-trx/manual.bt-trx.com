@@ -1,24 +1,59 @@
-# Anschlusskabel
+# Anschlusskabel und Jumper Board
 
-Zum Anschluss des bt-trx an das Funkgerät empfiehlt es sich, z.B. aus einem
-Netzwerkkabel mit RJ45 Stecker ein Adapterkabel zu bauen.
+## Konzept
 
-Da die Ausgänge der Funkgeräte nicht immer eine passende Versorgungsspannung
-bzw. -leistung liefern, kann es erforderlich sein, die Spannung extern
-zuzuführen (z.B. über Zigarettenanzünder oder USB).
+Um das bt-trx mit einer maximal großen Anzahl an Funkgeräten kompatibel zu machen, 
+haben wir folgende Konzepte erdacht, welche bei der Konfektionierung des Anschlusskabels
+zu beachten sind.
 
 !!! info "Anschluss über NF-Buchse"
-    bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen
-    werden.  
-    Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem
-    Handmikrofon.  
-    Somit kann man beides benutzen, ohne Umstecken zu müssen.
+    bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen werden.  
+    Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem Handmikrofon.  
+    Somit kann man beides benutzen, ohne Umstecken zu müssen oder auch das Lautsprechersignal
+    mit durchgeschleift werden, falls dies nicht an der Mikrofonbuchse anliegt.
+    
+    Offene Fragen werden am besten im [Forum](https://forum.bt-trx.com/) oder unserer [Telegram-Gruppe](https://t.me/bttrxcom) beantwortet.
 
-!!! info "Spannungsversorgung"
-    bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+### Jumper Board
 
-    - Buchse J5: V_IN (Pin 7)/GND (Pin 8), 5...15 V DC, oder
-    - Mikro-USB Buchse des ESP32
+Durch das Jumper Board kann die RJ-45 Buchse komplett frei belegt werden. Damit
+ist es z.B. möglich einen Transceiver, welcher bereits über eine RJ-45 Buchse verfügt,
+direkt mit einem Standard Netzwerkkabel zu verbinden. Dadurch entfallen evtl. komplexe
+Lötarbeiten am Kabel.
+
+Im bt-trx Kit wird ein Generic Jumper Board mitgeliefert, welches via Lötjumper und 
+Litzen angepasst werden kann. Dieses kann, bei wechsel des Transceivers, einfach ausgetauscht
+werden.
+
+### Galvanische Trennung der Masseleitungen
+
+Da verschiedene Transceiver über unterschiedliche Massekonzepte verfügen, haben wir 
+uns dazu entschieden alle Masseleitungen voneinander galvanisch zu trennen. Dies
+erfolgt über hochwertige Audio Transformatoren sowie einem Optokoppler für PTT.
+
+Das bt-trx verfügt über 4 Massepfade:
+
+1. **PWR_GND:** Masse für alle digitalen Bausteine sowie die Spannungsversorgung
+2. **MIC_GND:** Masse für das Mikrofon des TRX
+3. **TRX_GND:** Masse des TRX sowie des TRX Lautsprecherausgangs
+4. **PTT_GND:** Masse des PTT (Emitter am Opotkoppler)
+
+Dies führt zwar zu einer etwas komplexeren verdrahtungsarbeit, hat
+jedoch den vorteil, dass das bt-trx an alle Masse-Gegebenheiten angepasst werden kann.
+
+Über das Jumperboard können die jeweiligen Massen beliebig untereinander und mit dem Transceiver 
+verbunden werden.
+
+### Spannungsversorgung
+
+Das bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+
+- Buchse **J5**: **V_IN** und **PWR_GND**, 5...15 V DC, oder
+- Mikro-USB Buchse des ESP32
+
+Manche Funkgeräte verfügen über einen Versorgungsspannungsausgang mit ausreichender Spannung 
+und Leistung. Falls nein, kann es erforderlich sein, die Spannung extern
+zuzuführen (z.B. über Zigarettenanzünder oder USB).
 
 !!! warning "Externe Absicherung vorsehen!"
     Auf der Platine befindet sich eine selbstrückstellende (PTC) Sicherung (250 mA Fast Trip, max. 24 DC), 
@@ -27,98 +62,123 @@ zuzuführen (z.B. über Zigarettenanzünder oder USB).
 
 Informationen zum Stromverbrauch gibt es [hier](../../10_Allgemein/Stromverbrauch).
 
-![Übersicht der Anschlüsse](bt-trx_connectors.png)
+## Generic Jumper Board
 
-**In den folgenden Tabellen werden immer RJ45 Stecker mit T568B Belegung angenommen!**
+Das Generic Jumper Board verfügt über Lötaugen und Löt Jumper zur individuellen Anpassung.
 
-## Belegung RJ45 Buchse (J1)
+![Generic Jumper Board](jumperboard.png)
 
-| Pin | Signal bt-trx | Farbe       | Kürzel |
-|:---:|---------------|-------------|:------:|
-| 1   | CAT_TX        | orange/weiß | o      |
-| 2   | AUDIO_IN_B    | orange      | O      |
-| 3   | CAT_RX        | grün/weiß   | g      |
-| 4   | AUDIO_IN_A    | blau        | B      |
-| 5   | PTT           | blau/weiß   | b      |
-| 6   | AUDIO_OUT     | grün        | G      |
-| 7   | V_IN (5...15 V DC) | braun/weiß  | br     |
-| 8   | GND           | braun       | BR     |
-| | | Farbkodierung: EIA/TIA 568B          | |
+Auf der linken Seite befinden sich die Pins zum bt-trx, auf der rechten zum RJ-45 **J1**.
 
-![RJ45 Pinnummerierung](bt-trx_rj45_pinnumbering.png)
+!!! info "Pinnummerierung J1"
+    Die Pinnummerierung des RJ-45 Steckers entspricht dem **T568B** Standard, wie er auch in der Netzwerktechnik
+    verwendet wird. Einige Transceiver ensprechen jedoch nicht diesem Standard und haben eine gespiegelte
+    Pinnummerierung. Bitte bei der Konfektionierung beachten
+    ![RJ45 Pinnummerierung](bt-trx_rj45_pinnumbering.png)
 
-## Belegung Funkgerät
+Mittig auf der Oberseite sind vier miteinander verbundenen Lötaugen (weißes quadrat) integirert, welche
+zur einfacheren Verbindung der Masseleitungen verwedet werden können.
 
-Hier ist eine Sammlung der Steckerbelegungen diverser Funkgeräte und der
-entsprechenden Signale des bt-trx.
+Die Lötjumper dienen zur schnellen 1:1 Durchkontaktierung, falls eh ein Kabel extra angefertigt werden muss.
+Die Anordung ist so gestaltet, dass die twisted-pair Paare eines Netzwerkkabels *MIC + MIC_GND*, *SPK + TRX_GND* sowie 
+*V_IN + PWR_GND* ensprechen.
+
+## Beispiele
+
+!!! info "Grafische Darstellung des Generic Jumper Boards"
+    Die mit z.B. Litze zu verbindenden Lötaugen sind durch farbige Linien dargestellt.
+    Zu verbindende Lötjumper sind durch magentafarbene Punkte gekennzeichnet. 
+
 
 ### Handfunkgeräte (2.5mm und 3.5 mm Klinke)
 
-z.B. Anytone, Baofeng, Kenwood, Wouxun
+#### Anytone, Baofeng, Kenwood, Wouxun
 
-| Kontakt       | Signal   | Farbe Stecker J5 | Signal bt-trx |
-|---------------|----------|:-----:|---------------|
-| 3.5 mm Tip    | +5V      | --    | --            |
-| 3.5 mm Ring   | MIC+     | G     | AUDIO_OUT     |
-| 3.5 mm Sleeve | MIC-/PTT | b     | PTT           |
-| 2.5 mm Tip    | SPK+     | B     | AUDIO_IN_A    |
-| 2.5 mm Ring   | Prog     | --    | --            |
-| 2.5 mm Sleeve | SPK-/PTT | BR    | GND           |
+![Bedrahtung Generic Jumper Board](jumperboard_kenwood.png)
 
-Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden oder
-über USB erfolgen.
+**Belegung des RJ-45 Steckers J1 unter Verwendung eines Netwerkkabels:**
+![Belegung J1](rj45_kenwood.png)
+
+| Kontakt           | Signal   | Belegung J1 | Signal bt-trx |
+|-------------------|----------|-------------|---------------|
+| 3.5 mm Tip        | +5V      | --          | --            |
+| 3.5 mm Ring       | MIC+     | 4           | MIC           |
+| 3.5 mm Sleeve     | MIC-/PTT | 5           | PTT           |
+| 2.5 mm Tip        | SPK+     | 6           | SPK           |
+| 2.5 mm Ring       | Prog     | --          | --            |
+| 2.5 mm Sleeve     | SPK-/PTT | 3           | TRX_GND, PTT_GND, MIC_GND |
+| Fahrzeugstecker + | 12V      | 1           | V_IN          |
+| Fahrzeugstecker - | GND      | 2           | PWR_GND       |
 
 **Beispiel für ein Adapterkabel mit Klinkenstecker**  
 ![Beispiel Adapterkabel mit Klinkenstecker](Adapter_Klinke_640.jpg)
+
 
 ### Kenwood
 
 #### TM-D700
 
-| Pin | Farbe | TM-D700             | Farbe Stecker J5 | Signal bt-trx |
-|:---:|:-----:|---------------------|:-----:|---------------|
-| 1   | o     | DWN                 | --    | --            |
-| 2   | O     | --                  | --    | --            |
-| 3   | g     | MIC                 | G     | AUDIO_OUT     |
-| 4   | B     | GND (MIC)           | BR    | --            |
-| 5   | b     | STBY (PTT)          | b     | PTT           |
-| 6   | G     | GND                 | BR    | GND           |
-| 7   | br    | 8 V, max. 200 mA    | br    | V_IN          |
-| 8   | BR    | UP                  | --    | --            |
+![Bedrahtung Generic Jumper Board](jumperboard_TM700.png)
+
+| Pin | Signal              | Belegung J1 | Signal bt-trx |
+|:---:|---------------------|-------|---------------|
+| 1   | DWN                 | 1     | --            |
+| 2   | --                  | 2     | --            |
+| 3   | MIC                 | 3     | MIC           |
+| 4   | GND (MIC)           | 4     | MIC_GND       |
+| 5   | STBY (PTT)          | 5     | PTT           |
+| 6   | GND                 | 6     | TRX_GND, PTT_GND, PWR_GND |
+| 7   | 8 V, max. 200 mA    | 7     | V_IN          |
+| 8   | UP                  | 8     | --            |
+
+Zur Verbindung des bt-trx mit dem TM-D700 kann nun ein
+Handelsübliches Netzwerkkabel verwendet werden.
 
 Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
-
-**Beispiel für ein Adapterkabel für Kenwood TM-D700**  
-![Beispiel Adapterkabel mit Klinkenstecker](Adapter_TMD_640.jpg)
+Der Mikrofonstecker verfügt über keinen Lausprecherausgang. Im obigen
+Beispiel wird das Audiosignal des Transceivers **nicht** zum bt-trx
+durchgeschleift.
 
 #### TM-D710
 
-| Pin | Farbe | TM-D710             | Farbe Stecker J5 | Signal bt-trx |
-|:---:|:-----:|---------------------|:-----:|---------------|
-| 1   | o     | Keypad Serial      | --    | --            |
-| 2   | O     | --                  | --    | --            |
-| 3   | g     | MIC (600 Ohm)       | G     | AUDIO_OUT     |
-| 4   | B     | GND (MIC)           | BR    | --            |
-| 5   | b     | PTT                 | b     | PTT           |
-| 6   | G     | GND                 | BR    | GND           |
-| 7   | br    | 8 V, max. 100 mA    | --    | --            |
-| 8   | BR    | --                  | --    | --            |
+![Bedrahtung Generic Jumper Board](jumperboard_TM710.png)
+
+| Pin | Signal              | Belegung J1 | Signal bt-trx |
+|:---:|---------------------|-------------|---------------|
+| 1   | Keypad Serial       | --          | --            |
+| 2   | --                  | --          | --            |
+| 3   | MIC                 | 3           | MIC           |
+| 4   | GND (MIC)           | 4           | MIC_GND       |
+| 5   | PTT                 | 5           | PTT           |
+| 6   | GND                 | 6           | TRX_GND, PTT_GND |
+| 7   | 8 V, max. 100 mA    | --          | V_IN          |
+| 8   | UP                  | --          | --            |
+| Fahrzeugstecker + | 12V   | 1           | V_IN          |
+| Fahrzeugstecker - | GND   | 2           | PWR_GND       |
 
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
-oder über USB erfolgen.
+oder über USB erfolgen, da die 100mA des TM-D710 nicht ausreichen. Im obigen
+Beispiel wird das Audiosignal des Transceivers **nicht** zum bt-trx
+durchgeschleift.
 
-### ICOM (nicht getestet)
+#### ICOM (nicht getestet)
 
-| Pin | Farbe | IC-7000          | Farbe Stecker J5 | Signal bt-trx |
-|:---:|:-----:|------------------|:-----:|---------------|
-| 1   | o     | +8 V, 10 mA max. | --    | --            |
-| 2   | O     | UP/DWN           | --    | --            |
-| 3   | g     | M8V SW           | --    | --            |
-| 4   | B     | PTT              | b     | PTT           |
-| 5   | b     | GND (MIC)        | BR    | GND           |
-| 6   | G     | MIC              | G     | AUDIO_OUT     |
-| 7   | br    | GND              | BR    | GND           |
-| 8   | BR    | SQL              | --    | --            |
+![Bedrahtung Generic Jumper Board](jumperboard_ICOM.png)
+
+| Pin | Signal            |  Belegung J1 | Signal bt-trx |
+|:---:|-------------------|--------------|---------------|
+| 1   | +8 V, 10 mA max.  | --           | --            |
+| 2   | UP/DWN            | --           | --            |
+| 3   | M8V SW            | --           | --            |
+| 4   | PTT               | 4            | PTT           |
+| 5   | GND (MIC)         | 5            | MIC_GND       |
+| 6   | MIC               | 6            | MIC           |
+| 7   | GND               | 7            | TRX_GND, PTT_GND |
+| 8   | SQL               | --           | --            |
+| Fahrzeugstecker + | 12V | 1            | V_IN          |
+| Fahrzeugstecker - | GND | 2            | PWR_GND       |
 
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
-oder über USB erfolgen.
+oder über USB erfolgen, da die 10mA der ICOM Mikrofonbuchse nicht ausreichen.
+Im obigen Beispiel wird das Audiosignal des Transceivers **nicht** zum bt-trx
+durchgeschleift.
