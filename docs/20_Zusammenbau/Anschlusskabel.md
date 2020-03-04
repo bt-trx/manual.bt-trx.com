@@ -2,51 +2,53 @@
 
 ## Konzept
 
-Um das bt-trx mit einer maximal großen Anzahl an Funkgeräten kompatibel zu machen, 
-haben wir folgende Konzepte erdacht, welche bei der Konfektionierung des Anschlusskabels
-zu beachten sind.
+Um das bt-trx mit einer maximal großen Anzahl an Funkgeräten kompatibel zu machen,
+ist die Belegung der RJ45 Buchse **J1** frei konfigurierbar.
 
-!!! info "Anschluss über NF-Buchse"
-    bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen werden.  
-    Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem Handmikrofon.  
-    Somit kann man beides benutzen, ohne Umstecken zu müssen oder auch das Lautsprechersignal
-    mit durchgeschleift werden, falls dies nicht an der Mikrofonbuchse anliegt.
-    
+In der Regel wird bt-trx an der Buchse für das Handmikrofon des Transceivers
+angeschlossen.  
+bt-trx kann natürlich auch an die NF Buchse des Funkgeräts angeschlossen werden.  
+Damit bleibt die Mikrofonbuchse frei zur Verwendung mit dem Handmikrofon.  
+Somit kann man beides benutzen ohne Umstecken zu müssen oder auch das Lautsprechersignal
+mit abgegriffen werden, falls dies nicht an der Mikrofonbuchse anliegt.
+
+!!! info "Hilfe!"
     Offene Fragen werden am besten im [Forum](https://forum.bt-trx.com/) oder unserer [Telegram-Gruppe](https://t.me/bttrxcom) beantwortet.
 
 ### Jumper Board
 
-Durch das Jumper Board kann die RJ-45 Buchse komplett frei belegt werden. Damit
-ist es z.B. möglich einen Transceiver, welcher bereits über eine RJ-45 Buchse verfügt,
-direkt mit einem Standard Netzwerkkabel zu verbinden. Dadurch entfallen evtl. komplexe
-Lötarbeiten am Kabel.
+Durch das Jumper Board kann die RJ45 Buchse komplett frei belegt werden. Damit
+ist es z.B. möglich manche Transceiver welche bereits über eine RJ45 Buchse verfügen,
+direkt mit einem standard Netzwerkkabel zu verbinden. Dadurch entfällt die
+Konfektion eines Anschlusskabels.
 
-Im bt-trx Kit wird ein Generic Jumper Board mitgeliefert, welches via Lötjumper und 
-Litzen angepasst werden kann. Dieses kann, bei wechsel des Transceivers, einfach ausgetauscht
-werden.
+Der Abstand der beiden Buchsenleisten ist im 2.54 mm Raster. Damit kann auch aus
+Lochraster ein Jumperboard gebaut werden.
+
+Im bt-trx Kit wird ein Generic Jumper Board mitgeliefert, welches via Lötjumper
+und Drähten angepasst werden kann. Dieses kann bei Wechsel des Transceivers
+einfach ausgetauscht werden.
 
 ### Galvanische Trennung der Masseleitungen
 
-Da verschiedene Transceiver über unterschiedliche Massekonzepte verfügen, haben wir 
-uns dazu entschieden alle Masseleitungen voneinander galvanisch zu trennen. Dies
-erfolgt über hochwertige Audio Transformatoren sowie einem Optokoppler für PTT.
+Da verschiedene Transceiver über unterschiedliche Massekonzepte verfügen, haben wir
+uns dazu entschieden alle Masseleitungen separat an das Jumper Board zu führen.
+Die galvanische Trennung der analogen und digital Signale erfolgt über
+für das Audiosignal über Transformatoren sowie mit einem Optokoppler für PTT.
 
-Das bt-trx verfügt über 4 Massepfade:
+bt-trx verfügt über 4 Massepfade:
 
 1. **PWR_GND:** Masse für alle digitalen Bausteine sowie die Spannungsversorgung
 2. **MIC_GND:** Masse für das Mikrofon des TRX
 3. **TRX_GND:** Masse des TRX sowie des TRX Lautsprecherausgangs
 4. **PTT_GND:** Masse des PTT (Emitter am Opotkoppler)
 
-Dies führt zwar zu einer etwas komplexeren verdrahtungsarbeit, hat
-jedoch den vorteil, dass das bt-trx an alle Masse-Gegebenheiten angepasst werden kann.
-
-Über das Jumperboard können die jeweiligen Massen beliebig untereinander und mit dem Transceiver 
-verbunden werden.
+Über das Jumperboard können die jeweiligen Massen beliebig untereinander und mit
+dem Transceiver verbunden werden.
 
 ### Spannungsversorgung
 
-Das bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
+bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
 - Buchse **J5**: **V_IN** und **PWR_GND**, 5...15 V DC, oder
 - Mikro-USB Buchse des ESP32
@@ -68,10 +70,10 @@ Das Generic Jumper Board verfügt über Lötaugen und Löt Jumper zur individuel
 
 ![Generic Jumper Board](jumperboard.png)
 
-Auf der linken Seite befinden sich die Pins zum bt-trx, auf der rechten zum RJ-45 **J1**.
+Auf der linken Seite befinden sich die Pins zum bt-trx, auf der rechten zum RJ45 **J1**.
 
 !!! info "Pinnummerierung J1"
-    Die Pinnummerierung des RJ-45 Steckers entspricht dem **T568B** Standard, wie er auch in der Netzwerktechnik
+    Die Pinnummerierung des RJ45 Steckers entspricht dem **T568B** Standard, wie er auch in der Netzwerktechnik
     verwendet wird. Einige Transceiver ensprechen jedoch nicht diesem Standard und haben eine gespiegelte
     Pinnummerierung. Bitte bei der Konfektionierung beachten
     ![RJ45 Pinnummerierung](bt-trx_rj45_pinnumbering.png)
@@ -79,15 +81,15 @@ Auf der linken Seite befinden sich die Pins zum bt-trx, auf der rechten zum RJ-4
 Mittig auf der Oberseite sind vier miteinander verbundenen Lötaugen (weißes quadrat) integirert, welche
 zur einfacheren Verbindung der Masseleitungen verwedet werden können.
 
-Die Lötjumper dienen zur schnellen 1:1 Durchkontaktierung, falls eh ein Kabel extra angefertigt werden muss.
-Die Anordung ist so gestaltet, dass die twisted-pair Paare eines Netzwerkkabels *MIC + MIC_GND*, *SPK + TRX_GND* sowie 
-*V_IN + PWR_GND* ensprechen.
+Die Lötjumper dienen zur direkten 1:1 Durchkontaktierung.
+Die Standardanordung ist so gestaltet, dass die twisted-pair Paare eines
+Netzwerkkabels *MIC + MIC_GND*, *SPK + TRX_GND* sowie *V_IN + PWR_GND* ensprechen.
 
 ## Beispiele
 
 !!! info "Grafische Darstellung des Generic Jumper Boards"
     Die mit z.B. Litze zu verbindenden Lötaugen sind durch farbige Linien dargestellt.
-    Zu verbindende Lötjumper sind durch magentafarbene Punkte gekennzeichnet. 
+    Zu verbindende Lötjumper sind durch magentafarbene Punkte gekennzeichnet.
 
 
 ### Handfunkgeräte (2.5mm und 3.5 mm Klinke)
@@ -96,7 +98,7 @@ Die Anordung ist so gestaltet, dass die twisted-pair Paare eines Netzwerkkabels 
 
 ![Bedrahtung Generic Jumper Board](jumperboard_kenwood.png)
 
-**Belegung des RJ-45 Steckers J1 unter Verwendung eines Netwerkkabels:**
+**Belegung des RJ45 Steckers J1 unter Verwendung eines Netwerkkabels:**
 ![Belegung J1](rj45_kenwood.png)
 
 | Kontakt           | Signal   | Belegung J1 | Signal bt-trx |
@@ -112,7 +114,6 @@ Die Anordung ist so gestaltet, dass die twisted-pair Paare eines Netzwerkkabels 
 
 **Beispiel für ein Adapterkabel mit Klinkenstecker**  
 ![Beispiel Adapterkabel mit Klinkenstecker](Adapter_Klinke_640.jpg)
-
 
 ### Kenwood
 
@@ -132,7 +133,7 @@ Die Anordung ist so gestaltet, dass die twisted-pair Paare eines Netzwerkkabels 
 | 8   | UP                  | 8     | --            |
 
 Zur Verbindung des bt-trx mit dem TM-D700 kann nun ein
-Handelsübliches Netzwerkkabel verwendet werden.
+handelsübliches Netzwerkkabel verwendet werden.
 
 Die Spannungsversorgung des bt-trx erfolgt direkt über das Funkgerät.
 Der Mikrofonstecker verfügt über keinen Lausprecherausgang. Im obigen
@@ -158,7 +159,7 @@ durchgeschleift.
 
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
 oder über USB erfolgen, da die 100mA des TM-D710 nicht ausreichen. Im obigen
-Beispiel wird das Audiosignal des Transceivers **nicht** zum bt-trx
+Beispiel wird das Rx-Audiosignal des Transceivers **nicht** zum bt-trx
 durchgeschleift.
 
 #### ICOM (nicht getestet)
@@ -180,5 +181,5 @@ durchgeschleift.
 
 Die Spannungsversorgung des bt-trx (br (+)/BR (-)) muss extern zugeführt werden
 oder über USB erfolgen, da die 10mA der ICOM Mikrofonbuchse nicht ausreichen.
-Im obigen Beispiel wird das Audiosignal des Transceivers **nicht** zum bt-trx
+Im obigen Beispiel wird das Rx-Audiosignal des Transceivers **nicht** zum bt-trx
 durchgeschleift.
