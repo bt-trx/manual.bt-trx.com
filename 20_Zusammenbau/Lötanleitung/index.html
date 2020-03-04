@@ -312,8 +312,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lotvorgang" class="md-nav__link">
-    Lötvorgang
+  <a href="#loten-der-hauptplatine" class="md-nav__link">
+    Löten der Hauptplatine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loten-des-jumper-moduls" class="md-nav__link">
+    Löten des Jumper Moduls
   </a>
   
 </li>
@@ -568,8 +575,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lotvorgang" class="md-nav__link">
-    Lötvorgang
+  <a href="#loten-der-hauptplatine" class="md-nav__link">
+    Löten der Hauptplatine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loten-des-jumper-moduls" class="md-nav__link">
+    Löten des Jumper Moduls
   </a>
   
 </li>
@@ -610,15 +624,16 @@
                 <h1 id="lotanleitung">Lötanleitung<a class="headerlink" href="#lotanleitung" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
-<p>Die folgende Lötanleitung bezieht sich auf das bt-trx Kit (v4.1) mit vorbestückten SMD Bauteilen.</p>
+<p>Die folgende Lötanleitung bezieht sich auf das bt-trx Kit (v5.0) mit vorbestückten SMD Bauteilen.</p>
 </div>
 <h2 id="inhalt-des-kits">Inhalt des Kits<a class="headerlink" href="#inhalt-des-kits" title="Permanent link">&para;</a></h2>
-<p><img alt="Kit v4.1" src="bt-trx_kit_1024.jpg" /></p>
+<p><img alt="Kit v5.0" src="bt-trx_kit_1024.jpg" /></p>
+<p><img alt="Generic Jumper Moudule" src="bt-trx_jumper-module_1024.jpg" /></p>
 <table>
 <thead>
 <tr>
 <th align="center">Menge</th>
-<th align="center">Beschreibung</th>
+<th>Beschreibung</th>
 <th>Bauteilnummer</th>
 <th>Hinweis</th>
 </tr>
@@ -626,90 +641,88 @@
 <tbody>
 <tr>
 <td align="center">1</td>
-<td align="center">Vorbestückte Platine</td>
+<td>Vorbestückte Platine</td>
 <td>-</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">ESP32 DevKitC</td>
+<td>ESP32 DevKitC</td>
 <td>U3</td>
-<td>Firmware v0.2.0 ist bereits aufgespielt</td>
+<td>zum Produktionszeitpunkt aktuelle Firmware ist bereits aufgespielt</td>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">Buchsenleiste 1x19</td>
+<td>Buchsenleiste 1x19</td>
 <td>-</td>
 <td>für ESP32</td>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">Stiftleiste 1x3</td>
-<td>J2, J5</td>
+<td>Buchsenleiste 1x8</td>
+<td>J9, J10</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">Stiftleiste 1x2</td>
-<td>J7</td>
+<td>Stiftleiste 1x3</td>
+<td>J5</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">Stiftleiste 1x4</td>
-<td>J6</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">Klinkenbuchse 3.5mm</td>
+<td>Klinkenbuchse 3.5mm</td>
 <td>J3</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">RJ45 Buchse</td>
+<td>RJ45 Buchse</td>
 <td>J1</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">Taster</td>
+<td>Taster</td>
 <td>SW1</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">Gehäuse</td>
+<td>Gehäuse</td>
 <td>-</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">1</td>
-<td align="center">Jumper</td>
+<td>Jumper</td>
 <td>-</td>
 <td>für J5</td>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">Befestigungsschrauben</td>
+<td>Befestigungsschrauben</td>
 <td>-</td>
 <td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td>Generic Jumper Module</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>Stiftleiste 1x8</td>
+<td>-</td>
+<td>für Generic Jumper Module</td>
 </tr>
 </tbody>
 </table>
 <p>Bitte prüfen Sie ob alle o.g. Bauteile im Kit vorhanden sind.</p>
-<h2 id="lotvorgang">Lötvorgang<a class="headerlink" href="#lotvorgang" title="Permanent link">&para;</a></h2>
+<h2 id="loten-der-hauptplatine">Löten der Hauptplatine<a class="headerlink" href="#loten-der-hauptplatine" title="Permanent link">&para;</a></h2>
 <p><img alt="Vorbestückte Platine" src="bt-trx_board_1024.jpg" /></p>
-<p>Idealerweise wird mit den Stiftleisten <strong>J2</strong>, <strong>J5</strong>, <strong>J6</strong> und <strong>J7</strong> begonnen, da diese die geringste Bauhöhe aufweisen</p>
-<div class="admonition note">
-<p class="admonition-title">Hinweise zu den Stiftleisten</p>
-<ul>
-<li>Die Stiftleiste <strong>J2</strong> wird nur benötigt, falls ein PTT Taster nicht via Klinkenstecker verbunden werden soll, sondern direkt im Gehäuse verbaut wird.</li>
-<li>Die Stiftleiste <strong>J7</strong> wird nur benötigt, falls der Taster SW1 aus dem Gehäuse herrausgeführt werden soll. z.B. falls das bt-trx schwer erreichbar verbaut werden soll.</li>
-<li>Die Stiftleiste <strong>J6</strong> ist eine optionale Herausführung des I2C-Bus des ESP32. Diese wird aktuell nicht verwendet und könnte in Zukunft z.B. für ein Display verwendet werden.</li>
-</ul>
-</div>
+<p>Idealerweise wird mit der Stiftleiste <strong>J5</strong> begonnen, da diese die geringste Bauhöhe aufweist.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
 <p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
@@ -724,26 +737,30 @@ für "Soft-PTT" Funktionen.</li>
 <p>Weitere Informationen dazu im Kapitel <a href="../PTT-Taste/#soft-ptt">PTT-Taste</a>.</p>
 </div>
 <p>Als nächstes sollte der Taster <strong>SW1</strong> aufgelötet werden. Gefolgt von der RJ45 Buchse <strong>J1</strong> und der Klinkenbuchse <strong>J3</strong>. Hier sollte auf ein planes Aufliegen der Buchsen geachtet werden.</p>
-<p>Zuguterletzt folgt der ESP32 (<strong>U3</strong>). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfert werden.</p>
-<p>Um den Lötvorgang so Einfach wie möglich zu gestalten, werden die Buchsenleisten vor dem Verlöten auf den ESP32 gesteckt und so eine senkrechte Montage gewährleistet.</p>
+<p>Nun folgen die beiden Buchsenleisten <strong>J9</strong> und <strong>J10</strong> für das <em>Jumper Modul</em>.</p>
+<p>Zuguterletzt folgt der ESP32 (<strong>U3</strong>). Die 1x19 Buchsenleisten dienen zum einen zur Erhöhung des ESP32 um den Taster unterhalb unterzubringen, zum anderen kann der ESP zu Entwicklungszwecken aus dem bt-trx leicht entfernt werden.</p>
+<p>Um den Lötvorgang so einfach wie möglich zu gestalten, werden die Buchsenleisten vor dem Verlöten auf den ESP32 gesteckt und so eine senkrechte Montage gewährleistet.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Die USB-Buchse des ESP32 muss bei der Montage zum Platinenrand hin orientiert sein</p>
 </div>
 <p><img alt="Vollbestückte Platine" src="bt-trx_assembled_1024.jpg" /></p>
+<h2 id="loten-des-jumper-moduls">Löten des Jumper Moduls<a class="headerlink" href="#loten-des-jumper-moduls" title="Permanent link">&para;</a></h2>
+<p>Um die Belegung des RJ45 Steckers <strong>J1</strong> an die jeweiligen Funkgeräte anzupassen, muss ein Jumper Modul zwischen <strong>J9</strong> und <strong>J10</strong> eingesetzt werden.
+Dazu kann das mitgelieferte <em>Generic Jumper Module</em> verwendet werden. Eine detaillierte Anleitung befindet sich unter <a href="../Anschlusskabel">Anschlusskabel</a>.</p>
 <h2 id="montage-in-das-gehause">Montage in das Gehäuse<a class="headerlink" href="#montage-in-das-gehause" title="Permanent link">&para;</a></h2>
 <p>Nun wird das Modul mit den 2 beiligenden Schrauben im mitgelieferten Gehäuse
-befestigt. Die Frontplatte muss derzeit noch manuell bearbeitet oder mit einem
-3D Drucker (Link folgt) gefertigt werden.</p>
+befestigt. Die <a href="../Frontblende">Frontblende</a> muss manuell bearbeitet oder mit einem
+3D Drucker bzw. Lasercutter gefertigt werden.</p>
 <h2 id="inbetriebnahme">Inbetriebnahme<a class="headerlink" href="#inbetriebnahme" title="Permanent link">&para;</a></h2>
 <p>Zur Erstinbetriebnahme wird das bt-trx Modul mit einem Micro-USB Kabel oder
-über J1 (siehe <a href="../Anschlusskabel">Anschlusskabel</a>) mit Strom versorgt.</p>
+über <strong>J1</strong> (siehe <a href="../Anschlusskabel">Anschlusskabel</a>) mit Strom versorgt.</p>
 <p>Da der ESP32 vor der Auslieferung bereits mit der aktuellen bt-trx Firmware
 bespielt wurde, kann sofort losgelegt werden.
 Nach dem kurzen Bootvorgang blinkt die blaue LED und zeigt damit an, dass
 Bluetooth-Geräte in der Umgebung gesucht werden.</p>
-<p>Nun kann, wenn noch nicht geschehen, das <a href="../Anschlusskabel">Anschlusskabel</a>
-und die <a href="../PTT-Taste">PTT-Taste</a> gefertigt werden.</p>
+<p>Nun kann, falls kein Bluetooth PTT Taster verwendet wird, die <a href="../PTT-Taste">PTT-Taste</a> 
+gefertigt werden.</p>
 <p>Die weitere Inbetriebnahme kann nun wie <a href="../../30_Bedienung/Anschluss">hier</a>
 beschrieben erfolgen.</p>
                 

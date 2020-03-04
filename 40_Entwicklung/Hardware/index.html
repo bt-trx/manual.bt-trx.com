@@ -525,8 +525,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lotbrucken" class="md-nav__link">
-    Lötbrücken
+  <a href="#lotbrucke" class="md-nav__link">
+    Lötbrücke
   </a>
   
 </li>
@@ -603,8 +603,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lotbrucken" class="md-nav__link">
-    Lötbrücken
+  <a href="#lotbrucke" class="md-nav__link">
+    Lötbrücke
   </a>
   
 </li>
@@ -639,35 +639,33 @@
 <h2 id="entwicklungsumgebung">Entwicklungsumgebung<a class="headerlink" href="#entwicklungsumgebung" title="Permanent link">&para;</a></h2>
 <p>Der Schaltplan sowie das PCB wurden mit KiCAD (Version 5.1) enwickelt.</p>
 <h2 id="schaltplan-und-pcb">Schaltplan und PCB<a class="headerlink" href="#schaltplan-und-pcb" title="Permanent link">&para;</a></h2>
-<p>Die PDF zum dev-board v4.1 können hier runtergeladen werden</p>
+<p>Die PDF zum dev-board v5.0 können hier runtergeladen werden</p>
 <ul>
-<li><a href="./schematic_v4_1.pdf">Schaltplan</a></li>
-<li><a href="./pcb_v4_1.pdf">PCB</a></li>
+<li><a href="./schematic_v5_0.pdf">Schaltplan</a></li>
+<li><a href="./pcb_v5_0_top.pdf">PCB top Layer</a></li>
+<li><a href="./pcb_v5_0_bottom.pdf">PCB bottom Layer</a></li>
 </ul>
 <h2 id="testpunkte">Testpunkte<a class="headerlink" href="#testpunkte" title="Permanent link">&para;</a></h2>
 <p>Die folgenden Testpunkte können z.B. zum Einstellen von Pegeln verwendet werden.</p>
 <ul>
-<li><strong>TP1</strong> <em>J1</em> - Audio B IN</li>
+<li><strong>TP1</strong> MIC GND</li>
 <li><strong>TP2</strong> <em>WT32i</em> - SPK_LN</li>
 <li><strong>TP3</strong> <em>WT32i</em> - SPK_LP</li>
 <li><strong>TP4</strong> <em>WT32i</em> - MIC_LP</li>
 <li><strong>TP5</strong> <em>WT32i</em> - MIC_LN</li>
-<li><strong>TP6</strong> <em>J1</em> - Audio OUT</li>
-<li><strong>TP7</strong> <em>J1</em> - Audio A IN</li>
-<li><strong>TP8</strong> GND</li>
+<li><strong>TP6</strong> <em>J1</em> - MIC (Audio OUT)</li>
+<li><strong>TP7</strong> <em>J1</em> - SPK (Audio IN)</li>
+<li><strong>TP8</strong> TRX GND</li>
+<li><strong>TPp</strong> PWR GND</li>
 </ul>
 <h2 id="trimmer">Trimmer<a class="headerlink" href="#trimmer" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>RV1</strong> Pegel Audio B IN</li>
-<li><strong>RV2</strong> Pegel Audio OUT (im Kit nicht bestückt!)</li>
-<li><strong>RV3</strong> Pegel Audio A IN</li>
+<li><strong>RV2</strong> Pegel MIC (Audio OUT) (im Kit nicht bestückt!)</li>
+<li><strong>RV3</strong> Pegel SPK (Audio  IN)</li>
 </ul>
-<h2 id="lotbrucken">Lötbrücken<a class="headerlink" href="#lotbrucken" title="Permanent link">&para;</a></h2>
+<h2 id="lotbrucke">Lötbrücke<a class="headerlink" href="#lotbrucke" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>JP1</strong> Enable Audio B (im Kit nicht gesetzt)</li>
-<li><strong>JP2</strong> Brücke wenn RV2 nicht bestückt (im Kit gesetzt)</li>
-<li><strong>JP3</strong> Brücke von Audio A/B zum AD Eingang ESP32 (im Kit nicht gesetzt)</li>
-<li><strong>JP4</strong> Enable PTT Pullup (im Kit gesetzt)</li>
+<li><strong>JP1</strong> Brücke wenn RV2 nicht bestückt (im Kit gesetzt)</li>
 </ul>
 <h2 id="interne-sockel">Interne Sockel<a class="headerlink" href="#interne-sockel" title="Permanent link">&para;</a></h2>
 <ul>
@@ -678,7 +676,12 @@
 </ul>
 </li>
 <li><strong>J6</strong> I²C Bus ESP32 (wird aktuell nicht verwendet)</li>
-<li><strong>J7</strong> Anschluss für SW1, falls dieser nach außen geführt werden muss.</li>
+<li><strong>J7</strong> Anschluss für SW1, falls dieser nach außen geführt werden muss</li>
+<li><strong>J8</strong> Zusätzliche Serielle Schnittstelle zum ESP (3.3V Pegel) für z.B. CAT</li>
+<li><strong>J9</strong> Sockel für Jumper Modul, WT32i seitig</li>
+<li><strong>J10</strong> Sockel für Jumper Modul, TRX seitig</li>
+<li><strong>J11</strong> Herausführung des ADC Pins des ESP, für zukünftige Erweiterungen (z.B. Squelch)</li>
+<li><strong>J12</strong> Abgriff des Audio IN Signals, für zukünftige Erweiterungen (z.B. Squelch)</li>
 </ul>
                 
                   

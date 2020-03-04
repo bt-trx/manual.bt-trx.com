@@ -355,9 +355,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beispiel-fur-eine-selbstgebaute-externe-ptt-taste" class="md-nav__link">
-    Beispiel für eine selbstgebaute externe PTT-Taste
+  <a href="#bluetooth-ptt" class="md-nav__link">
+    Bluetooth PTT
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drahtgebundene-ptt" class="md-nav__link">
+    Drahtgebundene PTT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schaltung-fur-ptt-taster" class="md-nav__link">
+    Schaltung für PTT Taster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-fur-einen-ptt-taster-hier-ohne-led" class="md-nav__link">
+    Beispiel für einen PTT Taster (hier ohne LED)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -568,9 +595,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beispiel-fur-eine-selbstgebaute-externe-ptt-taste" class="md-nav__link">
-    Beispiel für eine selbstgebaute externe PTT-Taste
+  <a href="#bluetooth-ptt" class="md-nav__link">
+    Bluetooth PTT
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drahtgebundene-ptt" class="md-nav__link">
+    Drahtgebundene PTT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schaltung-fur-ptt-taster" class="md-nav__link">
+    Schaltung für PTT Taster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-fur-einen-ptt-taster-hier-ohne-led" class="md-nav__link">
+    Beispiel für einen PTT Taster (hier ohne LED)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -595,7 +649,56 @@
                 
                 <h1 id="ptt-taste">PTT-Taste<a class="headerlink" href="#ptt-taste" title="Permanent link">&para;</a></h1>
 <h2 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h2>
-<p>Der PTT-Kontakt des Funkgeräts ist auf mehreren Wegen von bt-trx bedienbar.</p>
+<p>Das PTT Signal kann bei bt-trx über einen drahtgebundenen Taster oder über
+eine Bluetooth Low-Energy (BLE) Taste gesteuert werden. Die beiden Varianten
+können auch gleichzeitig benutzt werden.</p>
+<h2 id="soft-ptt">Soft-PTT<a class="headerlink" href="#soft-ptt" title="Permanent link">&para;</a></h2>
+<p>"Soft-PTT" ist kurz für "Software-PTT" und beschreibt Komfort-Funktionen, die
+mit einer direkten Verbindung der PTT-Taste an den Transceiver nicht möglich
+wären.<br />
+Daher wird bei Soft-PTT das PTT Signal durch den ESP32 erzeugt, der wiederum
+durch eine drahtgebundene Taster oder einen Bluetooth Button angesteuert wird.
+Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper <strong>J5</strong> auf der
+Stellung "uC" sein.<br />
+Ist der Jumper auf der Stellung "BTN", ist das Signal des drahtgebundenen Tasters
+direkt auf den Transceiver durchverbunden.</p>
+<p>Folgende Funktionen werden durch Soft-PTT ermöglicht:</p>
+<ul>
+<li>Bluetooth PTT Taster</li>
+<li>PTT Toggle *)</li>
+<li>PTT Timeout *)</li>
+<li>PTT Hang Time *)</li>
+</ul>
+<p>*) siehe auch <a href="../../30_Bedienung/Konfiguration">Konfiguration</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
+<p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
+Er entscheidet,</p>
+<ul>
+<li>ob der ESP32
+das PTT Signal erzeugt (Stellung <strong>uC</strong>, Pins 2-3 verbunden), wird benötigt
+für alle oben genannten "Soft-PTT" Funktionen, oder</li>
+<li>ob der drahtgebundene PTT Taster direkt zum Transceiver
+durchgeschleift wird (Stellung <strong>BTN</strong>, Pins 1-2 verbunden), <strong>obige Features
+können nicht genutzt werden</strong>.</li>
+</ul>
+</div>
+<h2 id="bluetooth-ptt">Bluetooth PTT<a class="headerlink" href="#bluetooth-ptt" title="Permanent link">&para;</a></h2>
+<p>Um PTT drahtlos zu bedienen kann aktuell <em>nur</em> der Anytone BP-01 PTT Button
+benutzt werden.
+Der Jumper J5 muss dazu auf <strong>uC</strong> gesetzt sein ("Soft-PTT").<br />
+Um den Bluetooth Button mit bt-trx zu verbinden, muss der Taster nach dem Start
+von bt-trx einmal gedrückt werden.<br />
+bt-trx erkennt den Taster automatisch.</p>
+<div class="admonition note">
+<p class="admonition-title">Bluetooth PTT und WLAN-Modus</p>
+<p>Während sich bt-trx im <a href="../../30_Bedienung/Konfiguration">WLAN-Modus</a>
+befindet, kann der Bluetooth PTT Button nicht genutzt werden. Es ist ein
+Neustart notwendig um die Taste wieder verbinden zu können.</p>
+</div>
+<h2 id="drahtgebundene-ptt">Drahtgebundene PTT<a class="headerlink" href="#drahtgebundene-ptt" title="Permanent link">&para;</a></h2>
+<p>Der PTT-Kontakt des Funkgeräts kann über mehrere Wege angesteuert werden.<br />
+Hier die PTT-Schaltung auf der bt-trx Platine:</p>
 <p><img alt="Schaltbild PTT-Taste" src="ptt_schematic.png" /></p>
 <p>Soll die PTT-Taste direkt in das bt-trx Gehäuse integriert werden,
 bietet sich J2 an.<br />
@@ -607,32 +710,12 @@ jeweiligen Zweck passende PTT-Taste gebaut werden (siehe Bild weiter unten).</p>
 einem GPIO (3.3 V, max. 20 mA) des ESP32 verbunden, der den PTT-Status anzeigt
 ("UC_PTT_LED").<br />
 An diesen Kontakt kann eine LED (mit Vorwiderstand) angeschlossen werden, um
-den aktuellen PTT Status widerzuspiegeln.</p>
-<div class="admonition note">
-<p class="admonition-title">Hinweis zum PTT-select Jumper J5</p>
-<p>Der <strong>Jumper J5</strong> muss für den Funkbetrieb <strong>in jedem Fall</strong> gesteckt sein.<br />
-Er entscheidet,</p>
-<ul>
-<li>ob der PTT Taster direkt zum Transceiver
-durchgeschleift wird (Stellung "BTN", Pins 1-2 verbunden), oder</li>
-<li>ob der ESP32
-das PTT Signal erzeugt (Stellung "uC", Pins 2-3 verbunden), wird benötigt
-für "Soft-PTT" Funktionen.</li>
-</ul>
-</div>
-<h2 id="soft-ptt">Soft-PTT<a class="headerlink" href="#soft-ptt" title="Permanent link">&para;</a></h2>
-<p>"Soft-PTT" ist kurz für "Software-PTT" und beschreibt Komfort-Funktionen, die
-mit einer direkten Verbindung der PTT-Taste an den Transceiver nicht möglich
-wären.<br />
-Daher wird für Soft-PTT der ESP32 zwischen Taster und Transceiver geschaltet,
-damit das PTT Signal per Software gesteuert werden kann.<br />
-Um die Soft-PTT Funktionen nutzen zu können, muss der Jumper <strong>J5</strong> auf der
-Stellung "uC" sein (Pins 2-3 verbunden).
-Aktuell sind folgende Funktionen in der Firmware integriert:</p>
-<ul>
-<li>PTT wird nach Loslassen des Tasters noch für 500 ms gehalten</li>
-</ul>
-<h2 id="beispiel-fur-eine-selbstgebaute-externe-ptt-taste">Beispiel für eine selbstgebaute externe PTT-Taste<a class="headerlink" href="#beispiel-fur-eine-selbstgebaute-externe-ptt-taste" title="Permanent link">&para;</a></h2>
+den aktuellen PTT Status wiederzuspiegeln.</p>
+<p>Der PTT Kontakt des Funkgeräts muss über das <a href="../Anschlusskabel">Jumper Modul</a>
+mit PTT verbunden werden. PTT_GND ist je nach Funkgerät zu verbinden.</p>
+<h3 id="schaltung-fur-ptt-taster">Schaltung für PTT Taster<a class="headerlink" href="#schaltung-fur-ptt-taster" title="Permanent link">&para;</a></h3>
+<p><img alt="PTT Button Schaltbild" src="ptt_button_schematic.png" /></p>
+<h3 id="beispiel-fur-einen-ptt-taster-hier-ohne-led">Beispiel für einen PTT Taster (hier ohne LED)<a class="headerlink" href="#beispiel-fur-einen-ptt-taster-hier-ohne-led" title="Permanent link">&para;</a></h3>
 <p><img alt="Beispiel PTT-Taste" src="Taster_PTT_640.jpg" /></p>
                 
                   

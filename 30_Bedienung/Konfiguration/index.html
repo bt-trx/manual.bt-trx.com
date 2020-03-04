@@ -432,6 +432,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ptt-toggle" class="md-nav__link">
+    PTT Toggle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ptt-timeout" class="md-nav__link">
+    PTT Timeout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ptt-hang-time" class="md-nav__link">
     PTT Hang Time
   </a>
@@ -663,6 +677,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ptt-toggle" class="md-nav__link">
+    PTT Toggle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ptt-timeout" class="md-nav__link">
+    PTT Timeout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ptt-hang-time" class="md-nav__link">
     PTT Hang Time
   </a>
@@ -739,7 +767,7 @@ unter <a href="http://bt-trx.local">http://bt-trx.local</a> oder
 <p class="admonition-title">Javascript notwendig</p>
 <p>Um das Webinterface zu nutzen, muss im Browser Javascript aktiviert sein.</p>
 </div>
-<div class="admonition info">
+<div class="admonition warning">
 <p class="admonition-title">BLE im WLAN-Modus nicht verfügbar</p>
 <p>Während der WLAN-Modus aktiv ist, kann keine Verbindung mit einem BLE PTT
 Button hergestellt werden.<br />
@@ -755,10 +783,22 @@ werden (-27...+39 dB).</p>
 <p>Hier kann die Verstärkung des Audio-Signals <em>zum</em> Transceiver eingestellt
 werden (-42...+24 dB).</p>
 <h3 id="ptt">PTT<a class="headerlink" href="#ptt" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Für die nachfolgenden PTT Features muss Jumper J5 auf "uC" gesetzt sein
+("Soft-PTT Modus").</p>
+</div>
+<h4 id="ptt-toggle">PTT Toggle<a class="headerlink" href="#ptt-toggle" title="Permanent link">&para;</a></h4>
+<p>Wenn diese Option aktiviert ist, wird PTT beim einmaligen Drücken so lange
+aktiviert, bis es durch nochmaliges Drücken der PTT Taste wieder deaktiviert
+wird.</p>
+<h4 id="ptt-timeout">PTT Timeout<a class="headerlink" href="#ptt-timeout" title="Permanent link">&para;</a></h4>
+<p>Legt fest, wie lange PTT am Stück aktiviert werden kann
+("maximum time of transmit").<br />
+Erlaubte Werte: 1-9 Minuten (0 deaktiviert den Timeout).</p>
 <h4 id="ptt-hang-time">PTT Hang Time<a class="headerlink" href="#ptt-hang-time" title="Permanent link">&para;</a></h4>
 <p>Zeit, die PTT nach Loslassen der PTT Taste noch aktiv bleibt, um die
 Signalverzögerung der Freisprecheinrichtung auszugleichen.</p>
-<p><strong>Wichtig:</strong> Jumper J5 muss auf "uC" gesetzt sein ("Soft-PTT Modus").</p>
 <h3 id="bluetooth">Bluetooth<a class="headerlink" href="#bluetooth" title="Permanent link">&para;</a></h3>
 <h4 id="bluetooth-pin-code">Bluetooth PIN Code<a class="headerlink" href="#bluetooth-pin-code" title="Permanent link">&para;</a></h4>
 <p>In der Regel ist für das Bluetooth Pairing keine Eingabe einer PIN erforderlich.
