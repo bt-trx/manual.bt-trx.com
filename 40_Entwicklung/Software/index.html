@@ -644,6 +644,12 @@ Alternativ kann die Firmware direkt auf einen angesteckten ESP32 geladen werden:
 </pre></div>
 
 
+<p>Falls der voreingestellte Port für den CP2102 nicht stimmt, kann ein anderer 
+Port mittels Paramter übergeben werden. Zum Beispiel:</p>
+<div class="codehilite"><pre><span></span>platformio run --target upload --upload-port /dev/ttyUSB4
+</pre></div>
+
+
 <h2 id="styleguide">Styleguide<a class="headerlink" href="#styleguide" title="Permanent link">&para;</a></h2>
 <p>Es sollte sich an den Google-Styleguide für C++ gehalten werden.
 Die Code-Formatierung wird mittels clang-format automatisch gewartet:
