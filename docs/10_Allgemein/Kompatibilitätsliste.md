@@ -31,6 +31,7 @@ keine Garantie dafür.
 | SEAT Ateca               | 2018    |ja             |  |
 | Skoda Octavia 5E         | 2013 |ja             | Radio: Columbus |
 | Tesla Model S            |         |ja             |  |
+| Volvo XC60               |         |ja             |  |
 | VW Caddy                 | 2014    |ja             | Radio: RCD330+ |
 | VW Passat                | 2017    |ja             | Radio: Discover Pro |
 
@@ -71,6 +72,7 @@ keine Garantie dafür.
 | Kenwood TM-V71           | ja            | Versorgungsspannung aus Mike-Buchse reicht nicht |
 | Tytera MD-380 / MD-390   | ja            | -- |
 | Wouxun KG-UV6D           | ja            | -- |
+| Yaesu FTM-100            | ja            | -- |
 | Yaesu FTM-350            | ja            | 1) |
 | Yaesu FT-7900            | ja            | 1) |
 | Yaesu FT-8800            | ja            | 1) |
