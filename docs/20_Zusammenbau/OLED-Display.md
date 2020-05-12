@@ -1,10 +1,10 @@
-# OLED-Display
+# OLED-Display (optional)
 
 ## Allgemeines
 
 Ab der Version 1.1.0 der Firmware wird die Ansteuerung eines OLED Displays
-unterstützt. Das Diplay muss einen SH1106 Chipsatz mit 128x64 Pixel Größe
-haben. Diese Display sind für kleines Geld bei diversen Lieferanten im
+unterstützt. Das Display muss einen SH1106 Chipsatz und 128x64 Pixel Größe
+haben. Diese Displays sind für kleines Geld bei diversen Lieferanten im
 Internet erhältlich.
 
 ![SH1106 1.3" OLED Display](OLED_Display.jpg)
@@ -29,3 +29,8 @@ OLED Display mit ins Gehäuse einzubauen. Für das Display wird ein kleiner
 Ausschnitt gefeilt und das Display selbst mit 4 M3 Senkkopfschrauben
 befestigt. Wichtig ist hierbei, die Schrauben nicht zu fest anzuziehen, da
 sonst die Platine an den Ecken zu stark gebogen wird.
+
+## Konfiguration
+
+Es ist keine weitere Konfiguration erforderlich. Das Display sollte sofort
+funktionieren und den aktuellen Status von bt-trx anzeigen.
