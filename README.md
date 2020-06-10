@@ -8,17 +8,12 @@ This manual is [mkdocs](https://www.mkdocs.org/) based.
 python -m pip install -r requirements.txt
 ```
 
-### Warning
-
-Currently, this documentation only works with mkdocs 1.0.4 and mkdocs-material
-4.6.3. Therefore, you might want to work in a Python virtualenv.
+You might want to work in a Python virtualenv:
 
 ```bash
 virtualenv --python=/usr/bin/python3 venv/
 source venv/bin/activate
 python -m pip install -r requirements.txt
-python -m pip show mkdocs mkdocs-material
-python -m mkdocs serve
 ```
 
 **Important: Each file name needs to be the same as the first heading in each file.**
