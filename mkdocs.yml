@@ -27,7 +27,7 @@ plugins:
 extra:
   version: 0.3.0
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/bt-trx'
 markdown_extensions:
   - admonition
