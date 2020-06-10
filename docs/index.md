@@ -5,7 +5,7 @@
 
 !!! note "Hinweis"
     Aktuelle Hardware-Version: v5.0  
-    Aktuelle Firmware-Version: v1.0.1
+    Aktuelle Firmware-Version: v1.1.0
 
 Diese Dokumentation ist unter der [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) lizensiert.
 

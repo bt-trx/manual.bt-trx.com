@@ -25,7 +25,7 @@ plugins:
       combined: true
       enabled_if_env: ENABLE_PDF_EXPORT
 extra:
-  version: 0.3.0
+  version: 1.1.0
   social:
     - icon: fontawesome/brands/github-alt
       link: 'https://github.com/bt-trx'
