@@ -21,6 +21,12 @@
 
 ## Einstellmöglichkeiten
 
+### Identification
+
+Mit diesem Eingabefeld kann das eigene Rufzeichen angegeben werden. Dieses wird
+dann für die Benamung der WLAN SSID und des Bluetooth Namens des bt-trx
+verwendet.
+
 ### Audio
 
 #### ADC Gain
@@ -36,14 +42,25 @@ werden (-42...+24 dB).
 ### PTT
 
 !!! info
-    Für die nachfolgenden PTT Features muss Jumper J5 auf "uC" gesetzt sein
+    Für alle nachfolgenden PTT Features muss Jumper J5 auf "uC" gesetzt sein
     ("Soft-PTT Modus").
 
-#### PTT Toggle
+#### PTT Mode
 
-Wenn diese Option aktiviert ist, wird PTT beim einmaligen Drücken so lange
-aktiviert, bis es durch nochmaliges Drücken der PTT Taste wieder deaktiviert
-wird.
+- Direct  
+    Wenn diese Option aktiviert ist, wird PTT aktiviert, solange die PTT Taste
+    gedrückt ist.
+
+- Toggle  
+    Wenn diese Option aktiviert ist, wird PTT beim einmaligen Drücken so lange
+    aktiviert, bis es durch nochmaliges Drücken der PTT Taste wieder deaktiviert
+    wird.
+
+- Willimode  
+    In diesem Modus ist das Verhalten des Hardware-PTT Tasters folgendermaßen:  
+    - Länger als 1 sek halten: Nichts passiert  
+    - Kürzer als 1 sek halten: PTT wird getoggelt  
+    - Bluetooth PTT Taste verhält sich wie im Toggle Mode.
 
 #### PTT Timeout
 
