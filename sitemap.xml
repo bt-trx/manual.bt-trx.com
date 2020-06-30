@@ -1,83 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://manual.bt-trx.com/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://manual.bt-trx.com/10_Allgemein/Kompatibilitätsliste/</loc>
-     <lastmod>2020-04-10</lastmod>
+    </url><url>
+     <loc>https://manual.bt-trx.com/10_Allgemein/Kompatibilit%C3%A4tsliste/</loc>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/10_Allgemein/Stromverbrauch/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://manual.bt-trx.com/20_Zusammenbau/Lötanleitung/</loc>
-     <lastmod>2020-04-10</lastmod>
+    </url><url>
+     <loc>https://manual.bt-trx.com/20_Zusammenbau/L%C3%B6tanleitung/</loc>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/Frontblende/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/Anschlusskabel/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/20_Zusammenbau/PTT-Taste/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
+     <loc>https://manual.bt-trx.com/20_Zusammenbau/OLED-Display/</loc>
+     <lastmod>2020-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Inbetriebnahme/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Konfiguration/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Funkbetrieb/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Firmware-Update/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/30_Bedienung/Troubleshooting/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/40_Entwicklung/Debugschnittstelle/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://manual.bt-trx.com/40_Entwicklung/Flashen der Firmware über USB/</loc>
-     <lastmod>2020-04-10</lastmod>
+    </url><url>
+     <loc>https://manual.bt-trx.com/40_Entwicklung/Flashen%20der%20Firmware%20%C3%BCber%20USB/</loc>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/40_Entwicklung/Software/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>https://manual.bt-trx.com/40_Entwicklung/Hardware/</loc>
-     <lastmod>2020-04-10</lastmod>
+     <lastmod>2020-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
