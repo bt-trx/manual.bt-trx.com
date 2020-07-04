@@ -50,7 +50,7 @@ dem Transceiver verbunden werden.
 
 bt-trx bietet zwei Möglichkeiten um mit Spannung versorgt zu werden:
 
-- Buchse **J5**: **V_IN** und **PWR_GND**, 5...15 V DC, oder
+- RJ 45 Buchse **J1**: **V_IN** und **PWR_GND**, 5...15 V DC, oder
 - Mikro-USB Buchse des ESP32
 
 Manche Funkgeräte verfügen über einen Versorgungsspannungsausgang mit ausreichender Spannung 
