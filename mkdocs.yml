@@ -8,52 +8,55 @@ repo_url: https://github.com/bt-trx/manual.bt-trx.com
 
 # Configuration
 theme:
-  name: material
-  palette:
-    primary: 'white'
-    accent: 'light blue'
-  logo: 'https://bt-trx.com/assets/img/bt-trx_quadrat.svg'
-  favicon: 'https://bt-trx.com/assets/favicon.ico'
-  font: false
+    name: material
+    palette:
+        primary: 'white'
+        accent: 'light blue'
+    logo: 'https://bt-trx.com/assets/img/bt-trx_quadrat.svg'
+    favicon: 'https://bt-trx.com/assets/favicon.ico'
+    font: false
 extra_css:
   - css/pdf.css
 
 # Customization
+  - css/version-select.css
 plugins:
+  - search
   - pdf-export:
-      verbose: false
-      combined: true
-      enabled_if_env: ENABLE_PDF_EXPORT
+        verbose: false
+        combined: true
+        enabled_if_env: ENABLE_PDF_EXPORT
 extra:
-  version: 1.1.0
   social:
     - icon: fontawesome/brands/github-alt
       link: 'https://github.com/bt-trx'
 markdown_extensions:
   - admonition
   - codehilite:
-      guess_lang: false
+        guess_lang: false
   - toc:
-      permalink: true
+        permalink: true
 nav:
   - Startseite: index.md
   - Allgemein:
-    - Kompatibilitätsliste: 10_Allgemein/Kompatibilitätsliste.md
-    - Stromverbrauch: 10_Allgemein/Stromverbrauch.md
+      - Kompatibilitätsliste: 10_Allgemein/Kompatibilitätsliste.md
+      - Stromverbrauch: 10_Allgemein/Stromverbrauch.md
   - Zusammenbau:
-    - Lötanleitung: 20_Zusammenbau/Lötanleitung.md
-    - Frontblende: 20_Zusammenbau/Frontblende.md
-    - Anschlusskabel: 20_Zusammenbau/Anschlusskabel.md
-    - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
-    - OLED-Display: 20_Zusammenbau/OLED-Display.md
+      - Lötanleitung: 20_Zusammenbau/Lötanleitung.md
+      - Frontblende: 20_Zusammenbau/Frontblende.md
+      - Anschlusskabel: 20_Zusammenbau/Anschlusskabel.md
+      - PTT-Taste: 20_Zusammenbau/PTT-Taste.md
+      - OLED-Display: 20_Zusammenbau/OLED-Display.md
   - Bedienung:
-    - Inbetriebnahme: 30_Bedienung/Inbetriebnahme.md
-    - Konfiguration: 30_Bedienung/Konfiguration.md
-    - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
-    - Firmware-Update: 30_Bedienung/Firmware-Update.md
-    - Troubleshooting: 30_Bedienung/Troubleshooting.md
+      - Inbetriebnahme: 30_Bedienung/Inbetriebnahme.md
+      - Konfiguration: 30_Bedienung/Konfiguration.md
+      - Funkbetrieb: 30_Bedienung/Funkbetrieb.md
+      - Firmware-Update: 30_Bedienung/Firmware-Update.md
+      - Troubleshooting: 30_Bedienung/Troubleshooting.md
   - Entwicklung:
-    - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
-    - Flashen der Firmware über USB: 40_Entwicklung/Flashen der Firmware über USB.md
-    - Software: 40_Entwicklung/Software.md
-    - Hardware: 40_Entwicklung/Hardware.md
+      - Debugschnittstelle: 40_Entwicklung/Debugschnittstelle.md
+      - Flashen der Firmware über USB: 40_Entwicklung/Flashen der Firmware über USB.md
+      - Software: 40_Entwicklung/Software.md
+      - Hardware: 40_Entwicklung/Hardware.md
+extra_javascript:
+  - js/version-select.js
