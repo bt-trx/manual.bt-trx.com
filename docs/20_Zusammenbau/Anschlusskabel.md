@@ -162,6 +162,10 @@ oder über USB erfolgen, da die 100mA des TM-D710 nicht ausreichen. Im obigen
 Beispiel wird das Rx-Audiosignal des Transceivers **nicht** zum bt-trx
 durchgeschleift.
 
+#### TM-V71
+
+![Bedrahtung Generic Jumper Board](jumperboard_TMV71.png)
+
 #### ICOM (nicht getestet)
 
 ![Bedrahtung Generic Jumper Board](jumperboard_ICOM.png)

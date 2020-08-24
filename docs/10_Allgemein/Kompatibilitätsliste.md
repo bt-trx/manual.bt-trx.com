@@ -31,11 +31,12 @@ keine Garantie dafür.
 | SEAT Ateca               | 2018    |ja             |  |
 | Skoda Octavia 5E         | 2013 |ja             | Radio: Columbus |
 | Tesla Model S            |         |ja             |  |
+| Toyota Corolla           | 2020    |ja             |  |
+| Toyota Yaris             | 2016    |ja             | Mikrofon vom Autoradio nicht optimal |
+| Volvo XC40               | 2019    |ja             |  |
 | Volvo XC60               |         |ja             |  |
 | VW Caddy                 | 2014    |ja             | Radio: RCD330+ |
 | VW Passat                | 2017    |ja             | Radio: Discover Pro |
-| Toyota Yaris             | 2016    |ja             |  |
-
 
 ### Zubehörradios
 
@@ -76,6 +77,7 @@ keine Garantie dafür.
 | Wouxun KG-UV6D           | ja            | -- |
 | Yaesu FTM-100            | ja            | -- |
 | Yaesu FTM-350            | ja            | 1) |
+| Yaesu FTM-400            | ja            | -- |
 | Yaesu FT-7900            | ja            | 1) |
 | Yaesu FT-8800            | ja            | 1) |
 | Surecom KT-8900d         | ja            | Versorgung über Zigarettenanzünder; Mic, PTT, SP über Klinkenbuchse, Versorgung über Mic-RJ45 nicht getestet. |
